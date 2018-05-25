@@ -48,3 +48,16 @@ document.querySelector('.toggle-design-button').addEventListener('click', () => 
     document.head.appendChild(link)
   }
 })
+
+Array.from(document.querySelectorAll('.picture')).map(picture => {
+  const imageControls = document.createElement('div');
+  imageControls.className = 'controls controls--image';
+  const changeImageButton = document.createElement('button');
+  changeImageButton.innerText = 'Change image';
+  changeImageButton.className = 'change-image-button controls__button';
+
+
+  imageControls.appendChild(changeImageButton);
+
+  picture.insertBefore(imageControls, picture.firstChild)
+})

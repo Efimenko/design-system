@@ -12,19 +12,24 @@
   }
 }
 
-.controls {
-  &--section {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    display: none;
+.picture:hover {
+  .controls {
+    display: block;
   }
+}
+
+.controls {
+  z-index: 1;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
 
   &--site {
+    display: block;
     position: fixed;
     left: 10px;
-    top: 10px;
-    z-index: 1;
+    right: auto;
   }
 
   &__button {
