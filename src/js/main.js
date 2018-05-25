@@ -1,9 +1,9 @@
 Array.from(document.querySelectorAll('.section')).map(section => {
   const sectionControls = document.createElement('div');
-  sectionControls.className = 'section-controls';
+  sectionControls.className = 'controls controls--section';
   const invertButton = document.createElement('button');
   invertButton.innerText = 'Invert block';
-  invertButton.className = 'invert-button section-controls__button';
+  invertButton.className = 'invert-button controls__button';
 
 
   sectionControls.appendChild(invertButton);
@@ -11,7 +11,7 @@ Array.from(document.querySelectorAll('.section')).map(section => {
   if(section.getAttribute('data-reserve-bg')) {
     const changeBgButton = document.createElement('button');
     changeBgButton.innerText = 'Change bg';
-    changeBgButton.className = 'change-bg-button section-controls__button';
+    changeBgButton.className = 'change-bg-button controls__button';
     sectionControls.appendChild(changeBgButton)
   }
 

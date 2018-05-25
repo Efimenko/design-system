@@ -6,34 +6,26 @@
   }
 
   &:hover {
-    .section-controls {
+    .controls--section {
       display: block;
     }
   }
 }
 
-.invert-button {
-
-}
-
-.section-controls {
-  display: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-
-  &__button {
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    display: block;
+.controls {
+  &--section {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
   }
-}
 
-.site-controls {
-  position: fixed;
-  left: 10px;
-  top: 10px;
-  z-index: 1;
+  &--site {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+  }
 
   &__button {
     margin-bottom: 10px;
