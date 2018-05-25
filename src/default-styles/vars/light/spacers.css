@@ -1,0 +1,15 @@
+:root {
+  --v-spacer1: calc(var(--base-font) * 0.25); /* 4px */
+  --v-spacer2: calc(var(--base-font) * 0.5); /* 8px */
+  --v-spacer3: var(--base-font); /* 16px */
+  --v-spacer4: calc(var(--base-font) * 1.5); /* 24px */
+  --v-spacer5: calc(var(--base-font) * 2); /* 32px */
+  --v-spacer6: calc(var(--base-font) * 2.5); /* 40px */
+  --v-spacer7: calc(var(--base-font) * 4); /* 64px */
+
+
+  --h-spacer1: 5px;
+  --h-spacer2: calc(var(--h-spacer1) * 2); /* 10px */
+  --h-spacer3: calc(var(--h-spacer1) * 4); /* 20px */
+  --h-spacer4: calc(var(--h-spacer1) * 8); /* 40px */
+}

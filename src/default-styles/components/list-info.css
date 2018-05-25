@@ -1,0 +1,21 @@
+.list-info {
+  padding-left: 0;
+  list-style: none;
+  margin-top: var(--v-spacer5);
+
+  &__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & > :last-child {
+      margin-top: 0;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 0;
+  }
+}

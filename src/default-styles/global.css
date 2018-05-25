@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  font-size: var(--base-font);
+  font-family: var(--base-family);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}

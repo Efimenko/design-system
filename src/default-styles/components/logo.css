@@ -1,0 +1,29 @@
+.logo {
+  &--type {
+    &-image {
+      display: block;
+      max-width: 100%;
+    }
+
+    &-text {
+      display: inline-block;
+      font-size: var(--title-size);
+      line-height: var(--title-line-height);
+      color: var(--title-color);
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.logo-wrapper {
+  text-decoration: none;
+
+  & + * {
+    margin-top: var(--v-spacer5);
+  }
+}

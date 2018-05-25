@@ -1,0 +1,28 @@
+:root {
+  --hero-title-size: 5rem;
+  --hero-title-line-height: 1.125;
+  --hero-title-color: #323435;
+  --hero-title-offset: var(--v-spacer3);
+
+  --title-size: 2.125rem;
+  --title-line-height: 1.3529;
+  --title-color: #323435;
+  --title-offset: var(--v-spacer3);
+  --title-weight: 700;
+
+  --subtitle-size: 1.25rem;
+  --subtitle-line-height: 1.5;
+  --subtitle-color: #676767;
+  --subtitle-offset: var(--v-spacer3);
+
+  --heading-size: 1.625rem;
+  --heading-line-height: 1.3076;
+  --heading-color: #323435;
+  --heading-offset: var(--v-spacer3);
+
+  --body-size: var(--base-font);
+  --body-line-height: 1.625;
+  --body-color: #6e7173;
+  --body-offset: var(--v-spacer2);
+  --body-weight: 300;
+}

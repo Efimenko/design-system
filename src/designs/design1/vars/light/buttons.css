@@ -1,0 +1,29 @@
+:root {
+  --btn-radius: 5px;
+  --btn-text-transform: uppercase;
+
+  --btn-primary-background-image: linear-gradient(90deg, #fe0042, #aa0146);
+  --btn-primary-hover-background-image: linear-gradient(90deg, #fe0042, #aa0146);
+  --btn-primary-hover-shadow: 0px 7px 20px 0 rgba(249, 0, 66, 0.5);;
+
+  --btn-secondary-background-color: transparent;
+  --btn-secondary-color: #aab1b4;
+  --btn-secondary-border-size: 1px;
+
+  --btn-secondary-hover-background-color: #f7f7f7;
+  --btn-secondary-hover-color: #323435;
+  --btn-secondary-hover-border-size: 1px;
+  --btn-secondary-hover-border-color: #f7f7f7;
+
+  --btn-link-color: #323435;
+  --btn-link-background-color: transparent;
+
+  --btn-link-hover-color: #d70044;
+
+  --btn-sm-padding: 1.2em 2.5em;
+  --btn-sm-font-size: 10px;
+  --btn-md-padding: 1.36em 2.72em;
+  --btn-md-font-size: 11px;
+  --btn-lg-padding: 2.27em 3.63em;
+  --btn-lg-font-size: 11px;
+}

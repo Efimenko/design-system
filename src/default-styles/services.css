@@ -1,0 +1,14 @@
+.section {
+  position: relative;
+
+  &.dark-block {
+    background-color: var(--dark-shade) !important;
+  }
+}
+
+.invert-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px 10px;
+}

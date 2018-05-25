@@ -1,0 +1,7 @@
+:root {
+  --light-shade: #fff;
+  --brand-color: #91cc3d;
+  --dark-shade: #000;
+
+  --brand-color-darken-10: #76a92d; /* Must generate in editor */
+}

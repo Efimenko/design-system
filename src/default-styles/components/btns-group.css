@@ -1,0 +1,17 @@
+.btns-group {
+  font-size: 0;
+  margin: 0 calc(var(--gap) / 2 * -1);
+
+  .button {
+    width: calc(100% - var(--gap));
+    margin: calc(var(--gap) / 2);
+
+    @media (min-width: 480px) {
+      width: auto;
+    }
+  }
+}
+
+* + .btns-group {
+  margin-top: var(--btns-group-offset);
+}

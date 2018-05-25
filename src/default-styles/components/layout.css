@@ -1,0 +1,21 @@
+.layout {
+  @media (min-width: 768px) {
+    display: flex;
+    margin-right: calc(var(--gap) * -2);
+  }
+
+  &__col {
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      flex: 1;
+      flex-basis: calc(50% - var(--gap) * 2);
+      margin-right: calc(var(--gap) * 2);
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

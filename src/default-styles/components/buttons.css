@@ -1,0 +1,99 @@
+.button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: var(--btn-text-decoration);
+  text-transform: var(--btn-text-transform);
+  line-height: 1; /* ??? */
+  transition: background .2s ease-in, color .2s ease-in, box-shadow .2s ease-in;
+
+  &__border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: border-color .2s ease-in;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &--type {
+    &-primary {
+      background-color: var(--btn-primary-background-color);
+      background-image: var(--btn-primary-background-image);
+      color: var(--btn-primary-color);
+      border-radius: var(--btn-primary-radius);
+      font-family: var(--btn-primary-family);
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: var(--btn-primary-hover-background-color);
+        background-image: var(--btn-primary-hover-background-image);
+        box-shadow: var(--btn-primary-hover-shadow)
+      }
+    }
+
+    &-secondary {
+      background-color: var(--btn-secondary-background-color);
+      color: var(--btn-secondary-color);
+      border-radius: var(--btn-secondary-radius);
+      font-family: var(--btn-primary-family);
+
+      .button__border {
+        border: var(--btn-secondary-border);
+        border-radius: var(--btn-secondary-radius);
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: var(--btn-secondary-hover-background-color);
+        color: var(--btn-secondary-hover-color);
+
+        .button__border {
+          border: var(--btn-secondary-hover-border);
+        }
+      }
+    }
+
+    &-link {
+      color: var(--btn-link-color);
+      background-color: var(--btn-link-background-color);
+      text-decoration: var(--btn-link-text-decoration);
+      text-transform: var(--btn-link-text-transform);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: var(--btn-link-hover-color);
+        text-decoration: var(--btn-link-hover-text-decoration);
+      }
+
+      &[class*="size"] {
+        padding: var(--btn-link-padding);
+        font-size: var(--btn-link-font-size);
+      }
+    }
+  }
+
+  &--size {
+    &-sm {
+      padding: var(--btn-sm-padding);
+      font-size: var(--btn-sm-font-size);
+    }
+
+    &-md {
+      padding: var(--btn-md-padding);
+      font-size: var(--btn-md-font-size);
+    }
+
+    &-lg {
+      padding: var(--btn-lg-padding);
+      font-size: var(--btn-lg-font-size);
+    }
+  }
+}

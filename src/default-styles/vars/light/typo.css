@@ -1,0 +1,36 @@
+:root {
+  --hero-title-size: 2.441rem;
+  --hero-title-line-height: var(--base-line-height);
+  --hero-title-color: #000;
+  --hero-title-offset: var(--v-spacer3);
+  --hero-title-family: var(--base-family);
+  --hero-title-weight: 700;
+
+  --title-size: 1.953rem;
+  --title-line-height: 1.1875;
+  --title-color: #000;
+  --title-offset: var(--v-spacer3);
+  --title-family: var(--base-family);
+  --title-weight: 400;
+
+  --subtitle-size: 1.25rem;
+  --subtitle-line-height: 1.6;
+  --subtitle-color: #676767;
+  --subtitle-offset: var(--v-spacer3);
+  --subtitle-family: var(--base-family);
+  --subtitle-weight: 400;
+
+  --heading-size: 1.563rem;
+  --heading-line-height: 1.333;
+  --heading-color: #000;
+  --heading-offset: var(--v-spacer3);
+  --heading-family: var(--base-family);
+  --heading-weight: 400;
+
+  --body-size: var(--base-font);
+  --body-line-height: 1.5;
+  --body-color: #676767;
+  --body-offset: var(--v-spacer2);
+  --body-family: var(--base-family);
+  --body-weight: 400;
+}

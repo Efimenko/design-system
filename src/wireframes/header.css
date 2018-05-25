@@ -1,0 +1,36 @@
+[data-wireframe="header"] {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  .layout {
+    align-items: center;
+    &__col {
+      &:nth-child(1) {
+
+        @media (min-width: 768px) {
+          max-width: 320px;
+        }
+      }
+
+      &:nth-child(2) {
+
+        @media (min-width: 768px) {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .nav-list {
+    justify-content: flex-end;
+  }
+
+  .button {
+    flex-shrink: 0;
+  }
+}
