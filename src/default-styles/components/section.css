@@ -33,11 +33,10 @@
   }
 
   &__footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: var(--section-footer-offset);
-
-    &--align-center {
-      text-align: center;
-    }
   }
 
   &--cover {
@@ -46,6 +45,10 @@
       min-height: 450px;
       flex-direction: column;
       justify-content: center;
+    }
+
+    .section__footer {
+      justify-content: flex-start;
     }
   }
 

@@ -1,4 +1,4 @@
-[data-wireframe="contacts"] {
+[data-block="contacts"] {
   .layout__col {
     &:nth-child(1) {
       flex: 3;

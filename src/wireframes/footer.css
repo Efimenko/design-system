@@ -1,4 +1,4 @@
-[data-wireframe="footer"] {
+[data-block="footer"] {
   text-align: center;
 
   @media (min-width: 768px) {

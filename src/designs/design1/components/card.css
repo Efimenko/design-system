@@ -1,3 +1,9 @@
 .card {
   text-align: center;
+
+  &__image {
+    .picture {
+      padding-top: 100%;
+    }
+  }
 }

@@ -1,13 +1,13 @@
 :root {
-  --base-v-space: var(--base-font);
+  --base-v-space: 4px;
 
-  --v-spacer1: calc(var(--base-v-space) * 0.25); /* 4px */
-  --v-spacer2: calc(var(--base-v-space) * 0.5); /* 8px */
-  --v-spacer3: var(--base-v-space); /* 16px */
-  --v-spacer4: calc(var(--base-v-space) * 1.5); /* 24px */
-  --v-spacer5: calc(var(--base-v-space) * 2); /* 32px */
-  --v-spacer6: calc(var(--base-v-space) * 2.5); /* 40px */
-  --v-spacer7: calc(var(--base-v-space) * 4); /* 64px */
+  --v-spacer1: calc(var(--base-v-space) * 1); /* 4px */
+  --v-spacer2: calc(var(--base-v-space) * 2); /* 8px */
+  --v-spacer3: calc(var(--base-v-space) * 3); /* 12px */
+  --v-spacer4: calc(var(--base-v-space) * 5); /* 20px */
+  --v-spacer5: calc(var(--base-v-space) * 8); /* 32px */
+  --v-spacer6: calc(var(--base-v-space) * 12); /* 48px */
+  --v-spacer7: calc(var(--base-v-space) * 15); /* 60px */
 
 
   --h-spacer1: 5px;
