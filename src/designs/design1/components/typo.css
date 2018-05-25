@@ -1,0 +1,20 @@
+.text {
+  &--type {
+    &-hero-title {
+      position: relative;
+
+      &.text--decorated {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: calc(100% + 20px);
+          width: 50px;
+          height: 4px;
+          background: currentColor;
+        }
+      }
+    }
+  }
+}

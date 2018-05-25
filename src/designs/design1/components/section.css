@@ -9,5 +9,9 @@
       line-height: var(--subtitle-line-height);
       color: var(--subtitle-color);
     }
+
+    .section__inner {
+      padding: 0 70px;
+    }
   }
 }

@@ -5,9 +5,12 @@
   <title>Document</title>
   <link rel="stylesheet" href="default.css">
   <link rel="stylesheet" href="wireframes.css">
-  <link rel="stylesheet" href="design.css">
+  <!-- <link rel="stylesheet" href="design.css"> -->
 </head>
 <body>
+  <div class="site-controls">
+    <button class="site-controls__button toggle-design-button">Toggle design</button>
+  </div>
   <header class="section section--header" style="background: #dedede" data-block="header">
     <div class="section__inner">
       <div class="layout">
@@ -41,10 +44,10 @@
       </div>
     </div>
   </header>
-  <section class="section section--cover" style="background: #f7f7f7">
+  <section class="section section--cover" style="background: #f7f7f7" data-reserve-bg="url('./images/cover-design1.jpg')">
     <div class="section__inner">
       <div class="section__content">
-        <h1 class="text text--type-hero-title">Quantum Company</h1>
+        <h1 class="text text--type-hero-title text--decorated">Quantum Company</h1>
         <p class="text text--type-title">We can execute even the most unpredictable ideas!</p>
       </div>
       <footer class="section__footer">

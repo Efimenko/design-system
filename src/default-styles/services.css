@@ -4,11 +4,40 @@
   &.dark-block {
     background-color: var(--dark-shade) !important;
   }
+
+  &:hover {
+    .section-controls {
+      display: block;
+    }
+  }
 }
 
 .invert-button {
+
+}
+
+.section-controls {
+  display: none;
   position: absolute;
   right: 10px;
   top: 10px;
-  padding: 5px 10px;
+
+  &__button {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: block;
+  }
+}
+
+.site-controls {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+
+  &__button {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: block;
+  }
 }

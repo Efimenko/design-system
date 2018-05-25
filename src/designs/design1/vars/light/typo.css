@@ -3,6 +3,7 @@
   --hero-title-line-height: 1.125;
   --hero-title-color: #323435;
   --hero-title-offset: var(--v-spacer3);
+  --hero-title-weight: 400;
 
   --title-size: 2.125rem;
   --title-line-height: 1.3529;
