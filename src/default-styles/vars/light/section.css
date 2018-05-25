@@ -1,3 +1,4 @@
 :root {
   --section-footer-offset: var(--v-spacer7);
+  --section-header-offset: var(--v-spacer6);
 }
