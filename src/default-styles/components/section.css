@@ -33,7 +33,7 @@
   }
 
   &__footer {
-    margin-top: calc(var(--v-spacer7) - var(--gap) / 2);
+    margin-top: var(--section-footer-offset);
 
     &--align-center {
       text-align: center;

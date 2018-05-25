@@ -1,6 +1,6 @@
 .btns-group {
   font-size: 0;
-  margin: 0 calc(var(--gap) / 2 * -1);
+  margin: calc(var(--gap) / 2 * -1);
 
   .button {
     width: calc(100% - var(--gap));
