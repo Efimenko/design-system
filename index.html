@@ -5,84 +5,140 @@
   <title>Document</title>
   <link rel="stylesheet" href="default.css">
   <link rel="stylesheet" href="wireframes.css">
-  <!-- <link rel="stylesheet" href="design.css"> -->
 </head>
 <body>
   <div class="controls controls--site">
     <button class="controls__button toggle-design-button">Toggle design</button>
   </div>
-  <header class="section section--header" style="background: #dedede" data-block="header">
-    <div class="section__inner">
-      <div class="layout">
-        <div class="layout__col">
-          <a href="#" class="logo-wrapper">
-            <h2 class="logo logo--type-text">Company name</h2>
-          </a>
-        </div>
-        <div class="layout__col">
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-list__item">
-                <a href="#" class="nav-list__link">About us</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="#" class="nav-list__link">Services</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="#" class="nav-list__link">Projects</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="#" class="nav-list__link">Testimonials</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="#" class="nav-list__link">Contact us</a>
-              </li>
-            </ul>
-          </nav>
-          <a href="#" class="button button--size-sm button--type-primary">Request a quote</a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="section section--cover" style="background: #f7f7f7" data-reserve-bg="url('./images/cover-design1.jpg')">
-    <div class="section__inner">
-      <div class="section__content">
-        <h1 class="text text--type-hero-title text--decorated">Quantum Company</h1>
-        <p class="text text--type-title">We can execute even the most unpredictable ideas!</p>
-      </div>
-      <footer class="section__footer">
-        <div class="btns-group">
-          <a href="#" class="button button--size-lg button--type-primary">
-            <div class="button__border"></div>
-            <span class="button__content">Request a quote</span>
-          </a>
-          <a href="#" class="button button--size-lg button--type-secondary">
-            <div class="button__border"></div>
-            <span class="button__content">Learn more</span>
-          </a>
-        </div>
-      </footer>
-    </div>
-  </section>
 
-  <!-- About start -->
-  <section class="section" data-block="about">
-    <div class="section__inner">
-      <div class="layout">
-        <div class="layout__col">
-          <div class="picture-wrapper">
-            <picture class="picture">
-              <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-              <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
-            </picture>
+  <!-- Header block start -->
+  <div class="block">
+    <header class="section section--header" style="background: #dedede" data-block="header" data-active="true">
+      <div class="section__inner">
+        <div class="layout">
+          <div class="layout__col">
+            <a href="#" class="logo-wrapper">
+              <h2 class="logo logo--type-text">Company name</h2>
+            </a>
+          </div>
+          <div class="layout__col">
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">About us</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">Services</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">Projects</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">Testimonials</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#" class="button button--size-sm button--type-primary">Request a quote</a>
           </div>
         </div>
-        <div class="layout__col">
+      </div>
+    </header>
+  </div>
+  <!-- Header block start -->
+
+  <!-- Cover block start -->
+  <div class="block">
+    <section class="section section--cover" style="background: #f7f7f7" data-reserve-bg="url('./images/cover-design1.jpg')" data-active="true">
+      <div class="section__inner">
+        <div class="section__content">
+          <h1 class="text text--type-hero-title text--decorated">Quantum Company</h1>
+          <p class="text text--type-title">We can execute even the most unpredictable ideas!</p>
+        </div>
+        <footer class="section__footer">
+          <div class="btns-group">
+            <a href="#" class="button button--size-lg button--type-primary">
+              <div class="button__border"></div>
+              <span class="button__content">Request a quote</span>
+            </a>
+            <a href="#" class="button button--size-lg button--type-secondary">
+              <div class="button__border"></div>
+              <span class="button__content">Learn more</span>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </div>
+  <!-- Cover block end -->
+
+  <!-- About block start -->
+  <div class="block">
+    <section class="section" data-block="about">
+      <div class="section__inner">
+        <div class="layout">
+          <div class="layout__col">
+            <div class="picture-wrapper">
+              <picture class="picture" data-reserve-image="./images/about-design1.jpg">
+                <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
+                <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+              </picture>
+            </div>
+          </div>
+          <div class="layout__col">
+            <h2 class="text text--type-title">About us</h2>
+            <p class="text text--type-subtitle">We provide a wide range of services to meet even the most daring requirements.</p>
+            <p class="text text--type-body">Our team consists of highly motivated and skilled specialists who know how to deal with any issue that you may come across. This creates a basis for lasting relationships with our clients built on trust and mutual understanding.</p>
+            <div class="socials-wrapper">
+              <h3 class="socials-heading text text--type-subtitle">Follow us:</h3>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle cx="15" cy="15" r="15"/><path d="M21.87 9.263c-.422.271-1.395.665-1.874.665a3.006 3.006 0 0 0-5.103 2.748c-2.252-.059-4.715-1.187-6.197-3.119-.912 1.578-.123 3.333.911 3.972-.354.027-1.005-.04-1.312-.34-.02 1.047.483 2.435 2.319 2.938-.354.19-.98.136-1.252.095.096.884 1.333 2.04 2.687 2.04-.482.558-2.298 1.57-4.335 1.248a9.032 9.032 0 0 0 4.703 1.33c4.85 0 8.616-3.931 8.413-8.78v-.017-.038l-.001-.043a5.186 5.186 0 0 0 1.457-1.54c-.246.136-.982.406-1.667.474.44-.238 1.091-1.015 1.252-1.633" fill="#FFF"/></g></svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle cx="15" cy="15" r="15"/><path d="M12.938 22.301h2.732v-7.504h2.05l.405-2.345H15.67v-1.699c0-.547.354-1.123.86-1.123h1.396V7.286h-1.71v.01c-2.676.097-3.225 1.647-3.273 3.274h-.005v1.882h-1.367v2.345h1.367v7.504z" fill="#FFF"/></g></svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle cx="15" cy="15" r="15"/><path d="M9.157 11.129c1.032 0 1.87-.764 1.87-1.707 0-.943-.838-1.708-1.87-1.708-1.034 0-1.871.765-1.871 1.708s.837 1.707 1.87 1.707M7.714 22.105h3.355v-9.676H7.714zM15.778 16.723c0-1.11.525-2.195 1.78-2.195 1.256 0 1.564 1.085 1.564 2.169v5.284h3.34v-5.5c0-3.822-2.259-4.481-3.648-4.481-1.389 0-2.155.47-3.036 1.608v-1.303h-3.35v9.676h3.35v-5.258z" fill="#FFF"/></g></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="btns-group">
+              <a href="#" class="button button--size-md button--type-primary">
+                <div class="button__border"></div>
+                <span class="button__content">Request a quote</span>
+              </a>
+              <a href="#" class="button button--size-md button--type-secondary">
+                <div class="button__border"></div>
+                <span class="button__content">Learn more</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-block="about-w2" data-active="true">
+      <div class="section__inner">
+        <div class="picture-wrapper">
+          <picture class="picture" data-reserve-image="./images/about-design1.jpg">
+            <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
+            <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+          </picture>
+        </div>
+        <div class="section__content">
           <h2 class="text text--type-title">About us</h2>
           <p class="text text--type-subtitle">We provide a wide range of services to meet even the most daring requirements.</p>
           <p class="text text--type-body">Our team consists of highly motivated and skilled specialists who know how to deal with any issue that you may come across. This creates a basis for lasting relationships with our clients built on trust and mutual understanding.</p>
           <div class="socials-wrapper">
-            <h3 class="socials-heading text text--type-subtitle">Follow us:</h3>
             <ul class="socials">
               <li class="socials__item">
                 <a href="#" class="socials__link">
@@ -113,71 +169,171 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+  <!-- About block end -->
 
-  <section class="section">
-    <div class="section__inner">
-      <header class="section__header section__header--align-center">
-        <h2 class="text text--type-title">Services We Provide</h2>
-        <p class="text text--type-subtitle">We deliver all kind of services that support small and micro businesses. Here are some of them:</p>
-      </header>
-      <div class="section__content">
-        <ul class="cards-list">
-          <li class="cards-list__item card">
-            <div class="picture-wrapper card__image">
-              <picture class="picture">
-                <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
-              </picture>
-            </div>
-            <h3 class="text text--type-heading">Service 1</h3>
-            <p class="text text--type-body">Multipurpose assistance for online stores and offline retail businesses.</p>
-            <a class="button button--type-link" href="#">Learn more</a>
-          </li>
+  <!-- Services block start -->
+  <div class="block">
+    <section class="section" data-active="true">
+      <div class="section__inner">
+        <header class="section__header section__header--align-center">
+          <h2 class="text text--type-title">Services We Provide</h2>
+          <p class="text text--type-subtitle">We deliver all kind of services that support small and micro businesses. Here are some of them:</p>
+        </header>
+        <div class="section__content">
+          <ul class="cards-list">
+            <li class="cards-list__item card">
+              <div class="picture-wrapper card__image">
+                <picture class="picture" data-reserve-image="./images/service1-design1.jpg">
+                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
+                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                </picture>
+              </div>
+              <h3 class="text text--type-heading">Service 1</h3>
+              <p class="text text--type-body">Multipurpose assistance for online stores and offline retail businesses.</p>
+              <a class="button button--type-link" href="#">Learn more</a>
+            </li>
 
-          <li class="cards-list__item card">
-            <div class="picture-wrapper card__image">
-              <picture class="picture">
-                <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
-              </picture>
-            </div>
-            <h3 class="text text--type-heading">Service 1</h3>
-            <p class="text text--type-body">Developing marketing and business strategy to help company grow fast.</p>
-            <a class="button button--type-link" href="#">Learn more</a>
-          </li>
+            <li class="cards-list__item card">
+              <div class="picture-wrapper card__image">
+                <picture class="picture" data-reserve-image="./images/service2-design1.jpg">
+                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
+                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                </picture>
+              </div>
+              <h3 class="text text--type-heading">Service 1</h3>
+              <p class="text text--type-body">Developing marketing and business strategy to help company grow fast.</p>
+              <a class="button button--type-link" href="#">Learn more</a>
+            </li>
 
-          <li class="cards-list__item card">
-            <div class="picture-wrapper card__image">
-              <picture class="picture">
-                <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
-              </picture>
-            </div>
-            <h3 class="text text--type-heading">Service 1</h3>
-            <p class="text text--type-body">Building brand awareness for small businesses to increase potential reach.</p>
-            <a class="button button--type-link" href="#">Learn more</a>
-          </li>
+            <li class="cards-list__item card">
+              <div class="picture-wrapper card__image">
+                <picture class="picture" data-reserve-image="./images/service3-design1.jpg">
+                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
+                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                </picture>
+              </div>
+              <h3 class="text text--type-heading">Service 1</h3>
+              <p class="text text--type-body">Building brand awareness for small businesses to increase potential reach.</p>
+              <a class="button button--type-link" href="#">Learn more</a>
+            </li>
 
-          <li class="cards-list__item card">
-            <div class="picture-wrapper card__image">
-              <picture class="picture">
-                <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
-              </picture>
+            <li class="cards-list__item card">
+              <div class="picture-wrapper card__image">
+                <picture class="picture" data-reserve-image="./images/service4-design1.jpg">
+                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
+                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                </picture>
+              </div>
+              <h3 class="text text--type-heading">Service 1</h3>
+              <p class="text text--type-body">Aftersales support in marketing, sales, and staff training for enhanced performance.</p>
+              <a class="button button--type-link" href="#">Learn more</a>
+            </li>
+          </ul>
+          <footer class="section__footer section__footer--align-center">
+            <div class="btns-group">
+              <a href="#" class="button button--size-md button--type-primary">
+                <div class="button__border"></div>
+                <span class="button__content">Request a quote</span>
+              </a>
+              <a href="#" class="button button--size-md button--type-secondary">
+                <div class="button__border"></div>
+                <span class="button__content">Learn more</span>
+              </a>
             </div>
-            <h3 class="text text--type-heading">Service 1</h3>
-            <p class="text text--type-body">Aftersales support in marketing, sales, and staff training for enhanced performance.</p>
-            <a class="button button--type-link" href="#">Learn more</a>
-          </li>
-        </ul>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Services block end -->
+
+  <!-- Cta block start -->
+  <div class="block">
+    <section class="section section--cta" style="background: #f7f7f7" data-active="true">
+      <div class="section__inner">
+        <section class="section__content section__content--align-center">
+          <h2 class="text text--type-title">Want to work with us?</h2>
+          <p class="text text--type-body">Get a full-scale analysis of your business and recommended solutions to increase your profits.</p>
+        </section>
         <footer class="section__footer section__footer--align-center">
           <div class="btns-group">
             <a href="#" class="button button--size-md button--type-primary">
               <div class="button__border"></div>
               <span class="button__content">Request a quote</span>
             </a>
+          </div>
+        </footer>
+      </div>
+    </section>
+    </div>
+  <!-- Cta block end -->
+
+  <!-- Projects block start -->
+  <div class="block">
+    <section class="section" data-active="true">
+      <div class="section__inner">
+        <header class="section__header section__header--align-center">
+          <h2 class="text text--type-title">Our Projects</h2>
+          <p class="text text--type-subtitle">Each month, we usefully close our projects. Here is the list of our recent ones:</p>
+        </header>
+        <div class="section__content">
+          <ul class="tile">
+            <li class="tile__item">
+              <div class="tile__item-content">
+                <h2 class="text text--type-heading">Project 1</h2>
+                <p class="text text--type-body">Innovative digital solution for a marketing company. We worked on UX for the company website to make it more effective and increase the number of leads.</p>
+                <a href="#" class="button button--type-link">
+                  <div class="button__border"></div>
+                  <span class="button__content">Learn more</span>
+                </a>
+              </div>
+              <div class="tile__item-image picture-wrapper">
+                <picture class="picture">
+                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
+                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                </picture>
+              </div>
+            </li>
+
+            <li class="tile__item">
+              <div class="tile__item-content">
+                <h2 class="text text--type-heading">Project 2</h2>
+                <p class="text text--type-body">Branding of legal firm. Our work on this project included creating a logo, motto, website, advertising strategy, and other details that help to build a well-known brand. </p>
+                <a href="#" class="button button--type-link">
+                  <div class="button__border"></div>
+                  <span class="button__content">Learn more</span>
+                </a>
+              </div>
+              <div class="tile__item-image picture-wrapper">
+                <picture class="picture">
+                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
+                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                </picture>
+              </div>
+            </li>
+
+            <li class="tile__item">
+              <div class="tile__item-content">
+                <h2 class="text text--type-heading">Project 3</h2>
+                <p class="text text--type-body">Innovative digital solution for a marketing company. We worked on UX for the company website to make it more effective and increase the number of leads.</p>
+                <a href="#" class="button button--type-link">
+                  <div class="button__border"></div>
+                  <span class="button__content">Learn more</span>
+                </a>
+              </div>
+              <div class="tile__item-image picture-wrapper">
+                <picture class="picture">
+                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
+                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <footer class="section__footer section__footer--align-center">
+          <div class="btns-group">
             <a href="#" class="button button--size-md button--type-secondary">
               <div class="button__border"></div>
               <span class="button__content">Learn more</span>
@@ -185,161 +341,80 @@
           </div>
         </footer>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+  <!-- Projects block end -->
 
-  <section class="section section--cta" style="background: #f7f7f7">
-    <div class="section__inner">
-      <section class="section__content section__content--align-center">
-        <h2 class="text text--type-title">Want to work with us?</h2>
-        <p class="text text--type-body">Get a full-scale analysis of your business and recommended solutions to increase your profits.</p>
-      </section>
-      <footer class="section__footer section__footer--align-center">
-        <div class="btns-group">
-          <a href="#" class="button button--size-md button--type-primary">
-            <div class="button__border"></div>
-            <span class="button__content">Request a quote</span>
-          </a>
-        </div>
-      </footer>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section__inner">
-      <header class="section__header section__header--align-center">
-        <h2 class="text text--type-title">Our Projects</h2>
-        <p class="text text--type-subtitle">Each month, we usefully close our projects. Here is the list of our recent ones:</p>
-      </header>
-      <div class="section__content">
-        <ul class="tile">
-          <li class="tile__item">
-            <div class="tile__item-content">
-              <h2 class="text text--type-heading">Project 1</h2>
-              <p class="text text--type-body">Innovative digital solution for a marketing company. We worked on UX for the company website to make it more effective and increase the number of leads.</p>
-              <a href="#" class="button button--type-link">
-                <div class="button__border"></div>
-                <span class="button__content">Learn more</span>
+  <!-- Contacts block start -->
+  <div class="block">
+    <section class="section" data-block="contacts" data-active="true">
+      <div class="section__inner">
+        <header class="section__header section__header--align-center">
+          <h2 class="text text--type-title">Contacts</h2>
+        </header>
+        <div class="section__content">
+          <div class="layout">
+            <div class="layout__col">
+              <div class="picture-wrapper">
+                <picture class="picture" data-reserve-image="./images/map-design1.jpg">
+                  <source srcset="images/map.jpg">
+                  <img src="images/map.jpg" alt="About image" class="picture__image">
+                </picture>
+              </div>
+            </div>
+            <div class="layout__col">
+              <a href="#" class="logo-wrapper">
+                <picture class="logo logo--type-image">
+                  <source srcset="images/logo.jpg">
+                  <img src="images/logo.jpg" alt="Company logo" class="logo__image">
+                </picture>
               </a>
-            </div>
-            <div class="tile__item-image picture-wrapper">
-              <picture class="picture">
-                <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
-              </picture>
-            </div>
-          </li>
 
-          <li class="tile__item">
-            <div class="tile__item-content">
-              <h2 class="text text--type-heading">Project 2</h2>
-              <p class="text text--type-body">Branding of legal firm. Our work on this project included creating a logo, motto, website, advertising strategy, and other details that help to build a well-known brand. </p>
-              <a href="#" class="button button--type-link">
-                <div class="button__border"></div>
-                <span class="button__content">Learn more</span>
-              </a>
-            </div>
-            <div class="tile__item-image picture-wrapper">
-              <picture class="picture">
-                <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
-              </picture>
-            </div>
-          </li>
-
-          <li class="tile__item">
-            <div class="tile__item-content">
-              <h2 class="text text--type-heading">Project 3</h2>
-              <p class="text text--type-body">Innovative digital solution for a marketing company. We worked on UX for the company website to make it more effective and increase the number of leads.</p>
-              <a href="#" class="button button--type-link">
-                <div class="button__border"></div>
-                <span class="button__content">Learn more</span>
-              </a>
-            </div>
-            <div class="tile__item-image picture-wrapper">
-              <picture class="picture">
-                <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
-              </picture>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <footer class="section__footer section__footer--align-center">
-        <div class="btns-group">
-          <a href="#" class="button button--size-md button--type-secondary">
-            <div class="button__border"></div>
-            <span class="button__content">Learn more</span>
-          </a>
-        </div>
-      </footer>
-    </div>
-  </section>
-
-  <section class="section" data-block="contacts">
-    <div class="section__inner">
-      <header class="section__header section__header--align-center">
-        <h2 class="text text--type-title">Contacts</h2>
-      </header>
-      <div class="section__content">
-        <div class="layout">
-          <div class="layout__col">
-            <div class="picture-wrapper">
-              <picture class="picture">
-                <source srcset="images/map.jpg">
-                <img src="images/map.jpg" alt="About image" class="picture__image">
-              </picture>
-            </div>
-          </div>
-          <div class="layout__col">
-            <a href="#" class="logo-wrapper">
-              <picture class="logo logo--type-image">
-                <source srcset="images/logo.jpg">
-                <img src="images/logo.jpg" alt="Company logo" class="logo__image">
-              </picture>
-            </a>
-
-            <ul class="list-info">
-              <li class="list-info__item">
-                <h3 class="text text--type-heading list-info__heading">Address</h3>
-                <p class="text text--type-body">Head office in London - 36 Regent St.</p>
-              </li>
-              <li class="list-info__item">
-                <h3 class="text text--type-heading list-info__heading">Phone</h3>
-                <p class="text text--type-body">+1 (234) 567 89 00</p>
-              </li>
-              <li class="list-info__item">
-                <h3 class="text text--type-heading list-info__heading">E-mail</h3>
-                <p class="text text--type-body">mysite@weblium.com</p>
-              </li>
-            </ul>
-
-            <div class="socials-wrapper">
-              <ul class="socials">
-                <li class="socials__item">
-                  <a href="#" class="socials__link">
-                    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle cx="15" cy="15" r="15"/><path d="M21.87 9.263c-.422.271-1.395.665-1.874.665a3.006 3.006 0 0 0-5.103 2.748c-2.252-.059-4.715-1.187-6.197-3.119-.912 1.578-.123 3.333.911 3.972-.354.027-1.005-.04-1.312-.34-.02 1.047.483 2.435 2.319 2.938-.354.19-.98.136-1.252.095.096.884 1.333 2.04 2.687 2.04-.482.558-2.298 1.57-4.335 1.248a9.032 9.032 0 0 0 4.703 1.33c4.85 0 8.616-3.931 8.413-8.78v-.017-.038l-.001-.043a5.186 5.186 0 0 0 1.457-1.54c-.246.136-.982.406-1.667.474.44-.238 1.091-1.015 1.252-1.633" fill="#FFF"/></g></svg>
-                  </a>
+              <ul class="list-info">
+                <li class="list-info__item">
+                  <h3 class="text text--type-heading list-info__heading">Address</h3>
+                  <p class="text text--type-body">Head office in London - 36 Regent St.</p>
                 </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link">
-                    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle cx="15" cy="15" r="15"/><path d="M12.938 22.301h2.732v-7.504h2.05l.405-2.345H15.67v-1.699c0-.547.354-1.123.86-1.123h1.396V7.286h-1.71v.01c-2.676.097-3.225 1.647-3.273 3.274h-.005v1.882h-1.367v2.345h1.367v7.504z" fill="#FFF"/></g></svg>
-                  </a>
+                <li class="list-info__item">
+                  <h3 class="text text--type-heading list-info__heading">Phone</h3>
+                  <p class="text text--type-body">+1 (234) 567 89 00</p>
                 </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link">
-                    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle cx="15" cy="15" r="15"/><path d="M9.157 11.129c1.032 0 1.87-.764 1.87-1.707 0-.943-.838-1.708-1.87-1.708-1.034 0-1.871.765-1.871 1.708s.837 1.707 1.87 1.707M7.714 22.105h3.355v-9.676H7.714zM15.778 16.723c0-1.11.525-2.195 1.78-2.195 1.256 0 1.564 1.085 1.564 2.169v5.284h3.34v-5.5c0-3.822-2.259-4.481-3.648-4.481-1.389 0-2.155.47-3.036 1.608v-1.303h-3.35v9.676h3.35v-5.258z" fill="#FFF"/></g></svg>
-                  </a>
+                <li class="list-info__item">
+                  <h3 class="text text--type-heading list-info__heading">E-mail</h3>
+                  <p class="text text--type-body">mysite@weblium.com</p>
                 </li>
               </ul>
+
+              <div class="socials-wrapper">
+                <ul class="socials">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle cx="15" cy="15" r="15"/><path d="M21.87 9.263c-.422.271-1.395.665-1.874.665a3.006 3.006 0 0 0-5.103 2.748c-2.252-.059-4.715-1.187-6.197-3.119-.912 1.578-.123 3.333.911 3.972-.354.027-1.005-.04-1.312-.34-.02 1.047.483 2.435 2.319 2.938-.354.19-.98.136-1.252.095.096.884 1.333 2.04 2.687 2.04-.482.558-2.298 1.57-4.335 1.248a9.032 9.032 0 0 0 4.703 1.33c4.85 0 8.616-3.931 8.413-8.78v-.017-.038l-.001-.043a5.186 5.186 0 0 0 1.457-1.54c-.246.136-.982.406-1.667.474.44-.238 1.091-1.015 1.252-1.633" fill="#FFF"/></g></svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle cx="15" cy="15" r="15"/><path d="M12.938 22.301h2.732v-7.504h2.05l.405-2.345H15.67v-1.699c0-.547.354-1.123.86-1.123h1.396V7.286h-1.71v.01c-2.676.097-3.225 1.647-3.273 3.274h-.005v1.882h-1.367v2.345h1.367v7.504z" fill="#FFF"/></g></svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle cx="15" cy="15" r="15"/><path d="M9.157 11.129c1.032 0 1.87-.764 1.87-1.707 0-.943-.838-1.708-1.87-1.708-1.034 0-1.871.765-1.871 1.708s.837 1.707 1.87 1.707M7.714 22.105h3.355v-9.676H7.714zM15.778 16.723c0-1.11.525-2.195 1.78-2.195 1.256 0 1.564 1.085 1.564 2.169v5.284h3.34v-5.5c0-3.822-2.259-4.481-3.648-4.481-1.389 0-2.155.47-3.036 1.608v-1.303h-3.35v9.676h3.35v-5.258z" fill="#FFF"/></g></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+  <!-- Contacts block end -->
 
-  <footer class="section section--footer" style="background: #dedede" data-block="footer">
+  <!-- Footer block start -->
+  <div class="block">
+    <footer class="section section--footer" style="background: #dedede" data-block="footer" data-active="true">
     <div class="section__inner">
       <div class="layout">
         <div class="layout__col">
@@ -378,17 +453,10 @@
         </div>
       </div>
     </div>
-  </footer>
-  <script>
-    // Array.from(document.querySelectorAll('.section')).map(section => {
-    //   const invertButton = document.createElement('button');
-    //   invertButton.innerText = 'Invert block';
-    //   invertButton.className = 'invert-button';
+    </footer>
+  </div>
+  <!-- Footer block end -->
 
-    //   section.insertBefore(invertButton, section.firstChild)
-    // })
-  </script>
   <script src="bundle.js"></script>
-  <!-- <script src="src/js/main.js"></script> -->
 </body>
 </html>

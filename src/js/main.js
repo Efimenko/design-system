@@ -18,6 +18,14 @@ Array.from(document.querySelectorAll('.section')).map(section => {
   section.insertBefore(sectionControls, section.firstChild)
 })
 
+// Array.from(document.querySelectorAll('.block')).map(block => {
+//   if (block.querySelectorAll('.section').length > 1) {
+//     const changeLayoutButton = document.createElement('button');
+//     changeBgButton.innerText = 'Change layout';
+//     changeBgButton.className = 'change-layout-button controls__button';
+//   }
+// })
+
 Array.from(document.querySelectorAll('.invert-button')).map(button => {
   button.addEventListener('click', () => {
     button.parentNode.parentNode.classList.toggle("dark-block")
@@ -49,7 +57,7 @@ document.querySelector('.toggle-design-button').addEventListener('click', () => 
   }
 })
 
-Array.from(document.querySelectorAll('.picture')).map(picture => {
+Array.from(document.querySelectorAll('.picture[data-reserve-image]')).map(picture => {
   const imageControls = document.createElement('div');
   imageControls.className = 'controls controls--image';
   const changeImageButton = document.createElement('button');
@@ -60,4 +68,17 @@ Array.from(document.querySelectorAll('.picture')).map(picture => {
   imageControls.appendChild(changeImageButton);
 
   picture.insertBefore(imageControls, picture.firstChild)
+})
+
+Array.from(document.querySelectorAll('.change-image-button')).map(button => {
+  button.addEventListener('click', () => {
+    const image = button.parentNode.parentNode;
+    const reserveImage = image.getAttribute('data-reserve-image');
+    const initialImage = image.querySelector('img').getAttribute('src');
+
+    image.querySelector('img').setAttribute('src', reserveImage)
+    image.querySelector('source').setAttribute('srcset', reserveImage)
+
+    image.setAttribute('data-reserve-image', initialImage)
+  })
 })
