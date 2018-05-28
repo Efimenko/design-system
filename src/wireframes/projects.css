@@ -1,0 +1,6 @@
+[data-block="projects-w2"] {
+  .section__inner {
+    max-width: none;
+    padding: 0;
+  }
+}

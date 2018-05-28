@@ -9,7 +9,7 @@
 <body>
   <!-- Header block start -->
   <div class="block">
-    <header class="section section--header" style="background: #dedede" data-block="header" data-active="true">
+    <header class="section section--header" style="background: #fff" data-block="header" data-active="true">
       <div class="section__inner">
         <div class="layout">
           <div class="layout__col">
@@ -72,14 +72,14 @@
 
   <!-- About block start -->
   <div class="block">
-    <section class="section" data-block="about">
+    <section class="section" data-block="about" data-active="true">
       <div class="section__inner">
         <div class="layout">
           <div class="layout__col">
             <div class="picture-wrapper">
-              <picture class="picture" data-reserve-image="./images/about-design1.jpg">
-                <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+              <picture class="picture" data-reserve-image="./images/about-design1.jpg" data-bind="about-image">
+                <source srcset="./images/placeholder.png">
+                <img src="./images/placeholder.png" alt="About image" class="picture__image">
               </picture>
             </div>
           </div>
@@ -122,12 +122,12 @@
       </div>
     </section>
 
-    <section class="section" data-block="about-w2" data-active="true">
+    <section class="section" data-block="about-w2">
       <div class="section__inner">
         <div class="picture-wrapper">
-          <picture class="picture" data-reserve-image="./images/about-design1.jpg">
-            <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-            <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+          <picture class="picture" data-reserve-image="./images/about-design1.jpg" data-bind="about-image">
+            <source srcset="./images/placeholder.png">
+            <img src="./images/placeholder.png" alt="About image" class="picture__image">
           </picture>
         </div>
         <div class="section__content">
@@ -182,8 +182,8 @@
             <li class="cards-list__item card">
               <div class="picture-wrapper card__image">
                 <picture class="picture" data-reserve-image="./images/service1-design1.jpg">
-                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                  <source srcset="./images/placeholder.png">
+                  <img src="./images/placeholder.png" alt="About image" class="picture__image">
                 </picture>
               </div>
               <h3 class="text text--type-heading">Service 1</h3>
@@ -194,8 +194,8 @@
             <li class="cards-list__item card">
               <div class="picture-wrapper card__image">
                 <picture class="picture" data-reserve-image="./images/service2-design1.jpg">
-                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                  <source srcset="./images/placeholder.png">
+                  <img src="./images/placeholder.png" alt="About image" class="picture__image">
                 </picture>
               </div>
               <h3 class="text text--type-heading">Service 1</h3>
@@ -206,8 +206,8 @@
             <li class="cards-list__item card">
               <div class="picture-wrapper card__image">
                 <picture class="picture" data-reserve-image="./images/service3-design1.jpg">
-                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                  <source srcset="./images/placeholder.png">
+                  <img src="./images/placeholder.png" alt="About image" class="picture__image">
                 </picture>
               </div>
               <h3 class="text text--type-heading">Service 1</h3>
@@ -218,8 +218,8 @@
             <li class="cards-list__item card">
               <div class="picture-wrapper card__image">
                 <picture class="picture" data-reserve-image="./images/service4-design1.jpg">
-                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                  <source srcset="./images/placeholder.png">
+                  <img src="./images/placeholder.png" alt="About image" class="picture__image">
                 </picture>
               </div>
               <h3 class="text text--type-heading">Service 1</h3>
@@ -268,7 +268,7 @@
 
   <!-- Projects block start -->
   <div class="block">
-    <section class="section" data-active="true">
+    <section class="section" data-active="true" data-block="projects">
       <div class="section__inner">
         <header class="section__header section__header--align-center">
           <h2 class="text text--type-title">Our Projects</h2>
@@ -286,9 +286,9 @@
                 </a>
               </div>
               <div class="tile__item-image picture-wrapper">
-                <picture class="picture">
-                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                <picture class="picture" data-reserve-image="./images/project1-design1.jpg" data-bind="project1">
+                  <source srcset="./images/placeholder.png">
+                  <img src="./images/placeholder.png" alt="About image" class="picture__image">
                 </picture>
               </div>
             </li>
@@ -303,9 +303,9 @@
                 </a>
               </div>
               <div class="tile__item-image picture-wrapper">
-                <picture class="picture">
-                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                <picture class="picture" data-reserve-image="./images/project2-design1.jpg" data-bind="project2">
+                  <source srcset="./images/placeholder.png">
+                  <img src="./images/placeholder.png" alt="About image" class="picture__image">
                 </picture>
               </div>
             </li>
@@ -320,10 +320,70 @@
                 </a>
               </div>
               <div class="tile__item-image picture-wrapper">
-                <picture class="picture">
-                  <source srcset="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png">
-                  <img src="https://www.vms.ro/wp-content/uploads/2015/04/mobius-placeholder-2.png" alt="About image" class="picture__image">
+                <picture class="picture" data-reserve-image="./images/project1-design1.jpg" data-bind="project3">
+                  <source srcset="./images/placeholder.png">
+                  <img src="./images/placeholder.png" alt="About image" class="picture__image">
                 </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <footer class="section__footer section__footer--align-center">
+          <div class="btns-group">
+            <a href="#" class="button button--size-md button--type-secondary">
+              <div class="button__border"></div>
+              <span class="button__content">Learn more</span>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Projects block layout 2 strat -->
+    <section class="section" data-block="projects-w2">
+      <div class="section__inner">
+        <header class="section__header section__header--align-center">
+          <h2 class="text text--type-title">Our Projects</h2>
+          <p class="text text--type-subtitle">Each month, we usefully close our projects. Here is the list of our recent ones:</p>
+        </header>
+        <div class="section__content">
+          <ul class="tile tile--type-2">
+            <li class="tile__item" data-bind="project1" style="background: url('./images/placeholder.png'), no-repeat, center/cover" data-component="background" data-reserve-bg="url('./images/project1-design1.jpg')">
+              <div class="tile__item-content">
+                <div class="tile__item-inner">
+                  <h2 class="text text--type-heading">Project 1</h2>
+                  <p class="text text--type-body">Innovative digital solution for a marketing company. We worked on UX for the company website to make it more effective and increase the number of leads.</p>
+                  <a href="#" class="button button--type-link">
+                    <div class="button__border"></div>
+                    <span class="button__content">Learn more</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="tile__item" data-bind="project2" style="background: url('./images/placeholder.png'), no-repeat, center/cover" data-component="background" data-reserve-bg="url('./images/project2-design1.jpg')">
+              <div class="tile__item-content">
+                <div class="tile__item-inner">
+                  <h2 class="text text--type-heading">Project 2</h2>
+                  <p class="text text--type-body">Branding of legal firm. Our work on this project included creating a logo, motto, website, advertising strategy, and other details that help to build a well-known brand. </p>
+                  <a href="#" class="button button--type-link">
+                    <div class="button__border"></div>
+                    <span class="button__content">Learn more</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="tile__item" data-bind="project3" style="background: url('./images/placeholder.png'), no-repeat, center/cover" data-component="background" data-reserve-bg="url('./images/project1-design1.jpg')">
+              <div class="tile__item-content">
+                <div class="tile__item-inner">
+                  <h2 class="text text--type-heading">Project 3</h2>
+                  <p class="text text--type-body">Innovative digital solution for a marketing company. We worked on UX for the company website to make it more effective and increase the number of leads.</p>
+                  <a href="#" class="button button--type-link">
+                    <div class="button__border"></div>
+                    <span class="button__content">Learn more</span>
+                  </a>
+                </div>
               </div>
             </li>
           </ul>

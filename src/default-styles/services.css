@@ -6,12 +6,6 @@
   }
 }
 
-.picture:hover {
-  .controls {
-    display: block;
-  }
-}
-
 .controls {
   z-index: 1;
   position: absolute;
@@ -48,4 +42,20 @@ body > .controls {
   position: fixed;
   left: 10px;
   right: auto;
+}
+
+.as-bg {
+  .picture-wrapper {
+    opacity: 0;
+  }
+}
+
+.has-controls {
+  position: relative;
+
+  &:hover {
+    & > .controls {
+      display: block;
+    }
+  }
 }
