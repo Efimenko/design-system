@@ -19,13 +19,6 @@
   top: 10px;
   display: none;
 
-  &--site {
-    display: block;
-    position: fixed;
-    left: 10px;
-    right: auto;
-  }
-
   &__button {
     margin-bottom: 10px;
     padding: 5px 10px;
@@ -48,4 +41,11 @@
       display: block;
     }
   }
+}
+
+body > .controls {
+  display: block;
+  position: fixed;
+  left: 10px;
+  right: auto;
 }
