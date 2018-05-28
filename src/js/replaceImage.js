@@ -1,30 +1,32 @@
+import isPicture from './utils/isPicture.js';
+import replaceImage from './utils/replaceImage.js';
+
 Array.from(document.querySelectorAll('[data-action="change-image"]')).map(button => {
   button.addEventListener('click', () => {
     const image = button.parentNode.parentNode;
     const block = image.closest('.block');
     const bind = image.getAttribute('data-bind')
-    const attrName = 'data-reserve-image';
+    const pictureAttrName = 'data-reserve-image';
+    const bgAttrName = 'data-reserve-bg';
 
-    const reserveImage = image.getAttribute(attrName);
+    const reserveImage = image.getAttribute(pictureAttrName);
     const initialImage = image.querySelector('img').getAttribute('src');
 
     if(bind) {
       Array.from(block.querySelectorAll(`[data-bind="${bind}"]`)).map(image => {
-        if (image.tagName.toLowerCase() !== 'picture') {
-          image.style.background = `url("${reserveImage}")`
-          image.setAttribute('data-reserve-bg', `url(${initialImage})`)
-        }else {
-          image.querySelector('img').setAttribute('src', reserveImage);
-          image.querySelector('source').setAttribute('srcset', reserveImage);
+        if (isPicture(image)) {
+          replaceImage(image, reserveImage)
 
-          image.setAttribute(attrName, initialImage)
+          image.setAttribute(pictureAttrName, initialImage)
+        }else {
+          image.style.backgroundImage = `url('${reserveImage}')`
+          image.setAttribute(bgAttrName, initialImage)
         }
       })
     } else {
-      image.querySelector('img').setAttribute('src', reserveImage);
-      image.querySelector('source').setAttribute('srcset', reserveImage);
+      replaceImage(image, reserveImage, initialImage)
 
-      image.setAttribute(attrName, initialImage)
+      image.setAttribute(pictureAttrName, initialImage)
     }
 
   })
