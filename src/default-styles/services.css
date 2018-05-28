@@ -4,12 +4,6 @@
   &.dark-block {
     background-color: var(--dark-shade) !important;
   }
-
-  &:hover {
-    .controls--section {
-      display: block;
-    }
-  }
 }
 
 .picture:hover {
@@ -41,4 +35,17 @@
 
 .section:not([data-active="true"]) {
   display: none;
+}
+
+.block {
+  position: relative;
+  & > .controls {
+    display: none;
+  }
+
+  &:hover {
+    & > .controls {
+      display: block;
+    }
+  }
 }

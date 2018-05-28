@@ -1,5 +1,4 @@
 import './js/main.js'
-import './js/controls/addBlockControls.js'
 
 import './default-styles/main.css'
 import './wireframes/index.css'
