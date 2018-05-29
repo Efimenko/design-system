@@ -1,0 +1,30 @@
+:root {
+  --hero-title-size: 4.375rem;
+  --hero-title-line-height: 1.285;
+  --hero-title-color: #595959;
+  --hero-title-offset: var(--v-spacer3);
+  --hero-title-weight: 400;
+
+  --title-size: 2.875rem;
+  --title-line-height: 1.304;
+  --title-color: #595959;
+  --title-offset: var(--v-spacer3);
+  --title-weight: 500;
+
+  --subtitle-size: 1.125rem;
+  --subtitle-line-height: 1.777;
+  --subtitle-color: #595959;
+  --subtitle-offset: var(--v-spacer3);
+
+  --heading-size: 1.5rem;
+  --heading-line-height: 1.3076;
+  --heading-color: #595959;
+  --heading-offset: var(--v-spacer3);
+  --heading-weight: 500;
+
+  --body-size: var(--base-font);
+  --body-line-height: 1.5;
+  --body-color: #595959;
+  --body-offset: var(--v-spacer2);
+  --body-weight: 400;
+}

@@ -6,7 +6,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const extractDefaultStyles = new ExtractTextPlugin('default.css');
 const extractWireframesStyles = new ExtractTextPlugin('wireframes.css');
-const extractDesignStyles = new ExtractTextPlugin('design.css');
+const extractDesign1Styles = new ExtractTextPlugin('design1.css');
+const extractDesign2Styles = new ExtractTextPlugin('design2.css');
 
 module.exports = {
   mode: 'development',
@@ -34,8 +35,12 @@ module.exports = {
         use: extractWireframesStyles.extract([ 'css-loader', 'postcss-loader' ])
       },
       {
-        test: /designs\/.+\/.+\.css$/,
-        use: extractDesignStyles.extract([ 'css-loader', 'postcss-loader' ])
+        test: /designs\/design1\/.+\.css$/,
+        use: extractDesign1Styles.extract([ 'css-loader', 'postcss-loader' ])
+      },
+      {
+        test: /designs\/design2\/.+\.css$/,
+        use: extractDesign2Styles.extract([ 'css-loader', 'postcss-loader' ])
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -60,7 +65,8 @@ module.exports = {
   plugins: [
     extractDefaultStyles,
     extractWireframesStyles,
-    extractDesignStyles,
+    extractDesign1Styles,
+    extractDesign2Styles,
     new CleanWebpackPlugin(['dist']),
     new webpack.HotModuleReplacementPlugin()
   ]

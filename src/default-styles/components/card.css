@@ -1,1 +1,9 @@
-.card {}
+.card {
+  &--type-2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+    padding: var(--box-content-padding-md);
+  }
+}

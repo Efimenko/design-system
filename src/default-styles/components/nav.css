@@ -23,6 +23,13 @@
       line-height: var(--body-line-height);
       color: var(--body-color);
       text-decoration: none;
+      transition: color .2s ease-in;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: var(--brand-color);
+      }
     }
   }
 

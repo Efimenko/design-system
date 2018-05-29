@@ -1,7 +1,12 @@
 import createControlsGroup from './createControlsGroup.js';
-import { createButtonControl } from './createControl.js';
+import { createSelectControl } from './createControl.js';
 
 export default () => {
   const controls = createControlsGroup(document.body)
-  createButtonControl(controls, 'Toggle design', 'toggle-design')
+  createSelectControl(controls, [
+    {text: 'default', value: 'default'},
+    {text: 'design1', value: 'design1'},
+    {text: 'design2', value: 'design2'}
+  ],
+  'toggle-design')
 }

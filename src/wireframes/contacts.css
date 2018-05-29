@@ -16,3 +16,12 @@
     margin-bottom: auto;
   }
 }
+
+[data-block="contacts-w2"] {
+  text-align: center;
+
+  .cards-list__item {
+    flex-basis: calc(33.3333% - 2 * var(--gap));
+    max-width: calc(33.3333% - 2 * var(--gap));
+  }
+}

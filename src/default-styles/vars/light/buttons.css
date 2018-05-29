@@ -7,7 +7,7 @@
   --btn-radius: 4px;
   --btn-text-decoration: none;
   --btn-text-transform: none;
-  --btn-family: 'Montserrat', sans-serif;
+  --btn-family: var(--base-family);
 
   /*--------- PRIMARY ----------*/
 

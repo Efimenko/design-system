@@ -1,14 +1,19 @@
-document.querySelector('[data-action="toggle-design"]').addEventListener('click', () => {
-  const listStyles = document.head.querySelectorAll('link');
-  const isExistDesign = listStyles[listStyles.length - 1].href.match(/design/)
+const designSelect = document.querySelector('[data-action="toggle-design"]');
 
-  if(isExistDesign !== null) {
-    document.head.removeChild(listStyles[listStyles.length - 1])
-  }else {
+designSelect.addEventListener('change', () => {
+  const listStyles = document.head.querySelectorAll('link');
+
+  if(designSelect.value !== 'default') {
+    const isExistDesign = listStyles[listStyles.length - 1].href.match(/design/)
+
+    if(isExistDesign) document.head.removeChild(listStyles[listStyles.length - 1])
+
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = './design.css';
+    link.href = `./${designSelect.value}.css`;
 
     document.head.append(link)
+  }else {
+    document.head.removeChild(listStyles[listStyles.length - 1])
   }
 })
