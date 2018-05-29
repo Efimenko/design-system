@@ -1,17 +1,24 @@
 import createControlsGroup from './createControlsGroup.js';
-import createControl from './createControl.js';
+import { createButtonControl, createSelectControl } from './createControl.js';
 import isExistAdditional from './isExistAdditional.js';
 
 export default () => Array.from(document.querySelectorAll('.block')).map(block => {
   const controls = createControlsGroup(block);
 
   if(isExistAdditional('layout', block)) {
-    createControl(controls, 'Change layout', 'change-layout')
+    const layoutCounter = block.querySelectorAll('.section').length;
+    const dataForControl = []
+
+    for(let i = 1; i <= layoutCounter; i++) {
+      dataForControl.push({text: `Layout ${i}`, value: i})
+    }
+
+    createSelectControl(controls, dataForControl, 'change-layout')
   }
 
   if(isExistAdditional('bg', block)) {
-    createControl(controls, 'Change bg', 'change-bg')
+    createButtonControl(controls, 'Change bg', 'change-bg')
   }
 
-  createControl(controls, 'Invert block', 'invert-block')
+  createButtonControl(controls, 'Invert block', 'invert-block')
 })

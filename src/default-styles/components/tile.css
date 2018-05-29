@@ -19,7 +19,7 @@
 
       @media (min-width: 992px) {
         order: 0;
-        padding: var(--big-card-content-padding);
+        padding: var(--box-content-padding-lg);
         flex-basis: 50%;
         display: flex;
         flex-direction: column;

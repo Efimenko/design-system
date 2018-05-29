@@ -11,9 +11,16 @@ Array.from(document.querySelectorAll('[data-action="change-bg"]')).map(button =>
     if(block.classList.contains('block')) {
       Array.from(block.querySelectorAll('.section')).map(section => {
         const reserveBg = section.getAttribute(bgAttrName);
-        const initialBg = section.style.backgroundImage.match(/(\'|\")(?<link>.+)(\'|\")/).groups.link;
+        let initialBg = ''
+        if (section.style.backgroundImage) {
+          initialBg = section.style.backgroundImage === 'none'
+          ? section.style.backgroundImage
+          : section.style.backgroundImage.match(/(\'|\")(?<link>.+)(\'|\")/).groups.link;
+        }else if(section.style.backgroundColor) {
+          initialBg = 'none';
+        }
 
-        section.style.backgroundImage = `url('${reserveBg}')`;
+        section.style.backgroundImage = reserveBg === 'none' ? reserveBg : `url('${reserveBg}')`;
         section.setAttribute(bgAttrName, initialBg)
       })
     }else {

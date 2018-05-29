@@ -21,3 +21,35 @@
     }
   }
 }
+
+[data-block="about-w3"] {
+  padding: 0;
+
+  .layout {
+    margin-right: 0;
+
+    &__col{
+      margin-right: 0;
+
+      &:nth-child(2) {
+        padding: var(--box-content-padding-lg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+[data-block="about-w4"] {
+  text-align: center;
+
+  .socials-wrapper {
+    justify-content: center;
+  }
+
+  .cards-list__item {
+    flex-basis: calc(33.33333% - var(--gap) * 2);
+    max-width: calc(33.33333% - var(--gap) * 2);
+  }
+}
