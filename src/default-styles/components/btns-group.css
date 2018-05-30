@@ -1,7 +1,9 @@
 .btns-group {
+  display: flex;
+
   &__inner {
     font-size: 0;
-    margin: calc(var(--btn-offset) * -1);
+    margin: calc(var(--btn-offset) / -2);
 
     @media (max-width: 479px) {
       margin-left: 0;
@@ -10,13 +12,17 @@
   }
 
   .button {
-    margin: var(--btn-offset);
+    margin: calc(var(--btn-offset) / 2);
 
     @media (max-width: 479px) {
       width: 100%;
       margin-left: 0;
       margin-right: 0;
     }
+  }
+
+  &--align-center {
+    justify-content: center;
   }
 }
 

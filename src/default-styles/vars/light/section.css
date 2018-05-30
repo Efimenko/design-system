@@ -1,4 +1,13 @@
 :root {
   --section-footer-offset: var(--v-spacer7);
   --section-header-offset: var(--v-spacer6);
+  --section-vertical-offset: 50px;
+
+  @media (min-width: 768px) {
+    --section-vertical-offset: 60px
+  }
+
+  @media (min-width: 992px) {
+    --section-vertical-offset: 75px
+  }
 }

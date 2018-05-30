@@ -1,4 +1,6 @@
 :root {
   --socials-background: var(--brand-color);
   --socials-hover-background: var(--brand-color-darken-10);
+  --socials-top-offset: var(--v-spacer5);
+  --socials-item-offset: var(--gap);
 }

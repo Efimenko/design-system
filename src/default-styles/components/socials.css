@@ -1,10 +1,10 @@
 .socials {
   list-style: none;
   display: flex;
-  margin: calc(var(--gap) / -2);
+  margin: calc(var(--socials-item-offset) / -2);
 
   &__item {
-    margin: calc(var(--gap) / 2);
+    margin: calc(var(--socials-item-offset) / 2);
     font-size: 0;
   }
 
@@ -28,7 +28,11 @@
 .socials-wrapper {
   display: flex;
   align-items: center;
-  margin-top: var(--v-spacer5);
+  margin-top: var(--socials-top-offset);
+
+  &--align-center {
+    justify-content: center;
+  }
 }
 
 .socials-heading {
