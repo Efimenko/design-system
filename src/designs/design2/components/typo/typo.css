@@ -16,6 +16,20 @@
         & + * {
           margin-top: var(--v-spacer5);
         }
+
+        &.text--align-center {
+          &::after {
+            left: 50%;
+            margin-left: -23px;
+          }
+        }
+
+        &.text--align-right {
+          &::after {
+            left: auto;
+            right: 0;
+          }
+        }
       }
     }
   }

@@ -66,4 +66,6 @@
 
   --btn-link-padding: 0.3125em 0;
   --btn-link-font-size: var(--base-font);
+
+  --btn-offset: calc(var(--gap) / 2)
 }

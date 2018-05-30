@@ -1,5 +1,8 @@
 :root {
-  --hero-title-size: 5rem;
+  @media (min-width: 768px) {
+    --hero-title-size: 5rem;
+  }
+  --hero-title-size: 3rem;
   --hero-title-line-height: 1.125;
   --hero-title-color: #323435;
   --hero-title-offset: var(--v-spacer3);

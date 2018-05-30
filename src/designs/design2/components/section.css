@@ -1,24 +1,4 @@
 .section {
-  &__header, &__content {
-    &--align-center {
-      .text--decorated {
-        &::after {
-          left: 50%;
-          margin-left: -23px;
-        }
-      }
-    }
-
-    &--align-right {
-      .text--decorated {
-        &::after {
-          left: auto;
-          right: 0;
-        }
-      }
-    }
-  }
-
   &--cover {
     .text--decorated {
       &::after {
