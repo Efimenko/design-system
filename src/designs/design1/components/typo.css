@@ -22,7 +22,9 @@
         }
 
         & + * {
-          margin-top: var(--v-spacer6);
+          @media (max-width: 767px) {
+            margin-top: var(--v-spacer6);
+          }
         }
       }
     }

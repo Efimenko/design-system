@@ -2,6 +2,8 @@ html {
   box-sizing: border-box;
   font-size: var(--base-font);
   font-family: var(--base-family);
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 * {
