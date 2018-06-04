@@ -42,7 +42,6 @@
       font-weight: var(--heading-weight);
       line-height: var(--heading-line-height);
       color: var(--heading-color);
-      font-weight: 400;
 
       & + * {
         margin-top: var(--heading-offset);
