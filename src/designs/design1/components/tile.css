@@ -4,7 +4,7 @@
       min-height: 560px;
     }
     .text--type-heading {
-      @extend .text--type-title;
+      @extend %text--type-hero-title;
     }
   }
 }

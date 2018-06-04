@@ -1,13 +1,7 @@
 .section {
   &--cover {
     .text--type-title {
-      /* TODO: think about extend */
-
-      font-size: var(--subtitle-size);
-      font-family: var(--subtitle-family);
-      font-weight: var(--subtitle-weight);
-      line-height: var(--subtitle-line-height);
-      color: var(--subtitle-color);
+      @extend %text-type-subtitle;
     }
 
     .section__inner {
