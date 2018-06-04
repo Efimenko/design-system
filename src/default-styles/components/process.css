@@ -1,0 +1,32 @@
+.layout {
+  counter-reset: process;
+}
+
+.process {
+  display: flex;
+
+  &__media {
+    flex-basis: var(--media-width);
+    max-width: var(--media-width);
+    margin-right: calc(var(--gap) * 2);
+
+    &::before {
+      counter-increment: process;
+      content: counter(process);
+      background-color: var(--dark-shade);
+      display: block;
+      width: 100%;
+      line-height: var(--media-width);
+      border-radius: 50%;
+      color: var(--light-shade);
+      text-align: center;
+
+      @extent %text--type-heading;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    min-width: 0;
+  }
+}
