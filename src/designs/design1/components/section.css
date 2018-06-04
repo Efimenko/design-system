@@ -1,7 +1,7 @@
 .section {
   &--cover {
     .text--type-title {
-      @extend %text-type-subtitle;
+      @extend %text--type-subtitle;
     }
 
     .section__inner {

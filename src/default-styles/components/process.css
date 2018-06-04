@@ -10,6 +10,12 @@
     max-width: var(--media-width);
     margin-right: calc(var(--gap) * 2);
 
+    @extend %text--type-heading;
+
+    + * {
+      margin-top: 0;
+    }
+
     &::before {
       counter-increment: process;
       content: counter(process);
@@ -20,8 +26,6 @@
       border-radius: 50%;
       color: var(--light-shade);
       text-align: center;
-
-      @extent %text--type-heading;
     }
   }
 
