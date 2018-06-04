@@ -19,9 +19,7 @@
     }
 
     &__link {
-      font-size: var(--body-size);
-      line-height: var(--body-line-height);
-      color: var(--body-color);
+      @extend %text--type-body;
       text-decoration: none;
       transition: color .2s ease-in;
 

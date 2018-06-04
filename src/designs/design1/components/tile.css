@@ -4,15 +4,7 @@
       min-height: 560px;
     }
     .text--type-heading {
-      font-size: var(--hero-title-size);
-      font-family: var(--hero-title-family);
-      font-weight: var(--hero-title-weight);
-      line-height: var(--hero-title-line-height);
-      color: var(--hero-title-color);
-
-      & + * {
-        margin-top: var(--hero-title-offset);
-      }
+      @extend .text--type-title;
     }
   }
 }
