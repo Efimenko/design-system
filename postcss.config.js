@@ -3,6 +3,7 @@ module.exports = {
   plugins: {
     'postcss-import': {},
     'postcss-nested': {},
-    'postcss-extend': {}
+    'postcss-extend': {},
+    'postcss-mixins': {}
   }
 }
