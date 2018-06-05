@@ -34,6 +34,13 @@
   --subheading-family: var(--base-family);
   --subheading-weight: 400;
 
+  --caption-size: 0.875rem;
+  --caption-line-height: 1.333;
+  --caption-color: #979797;
+  --caption-offset: var(--v-spacer2);
+  --caption-family: var(--base-family);
+  --caption-weight: 400;
+
   --body-size: var(--base-font);
   --body-line-height: 1.5;
   --body-color: #676767;
