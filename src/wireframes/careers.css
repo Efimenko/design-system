@@ -2,8 +2,10 @@
   .picture-wrapper {
     margin-left: calc(var(--gap) * -1);
     margin-right: calc(var(--gap) * -1);
+    width: calc(100% + var(--gap) * 2);
 
     @media (min-width: 768px) {
+      max-width: 100%;
       margin-left: 0;
       margin-right: 0;
     }
@@ -52,6 +54,49 @@
 
     @media (min-width: 768px) {
       padding-top: 77.5%;
+    }
+  }
+}
+
+[data-block="careers-w2"] {
+  .item__inner {
+    max-width: 1200px;
+    padding: 0 var(--gap);
+    margin: 0 auto;
+  }
+
+  .item {
+    margin-right: calc(var(--gap) * -1);
+    margin-left: calc(var(--gap) * -1);
+    text-align: left;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &:nth-child(odd) {
+      background-color: var(--dark-accent);
+    }
+
+    &__link {
+      width: calc(100% - 70px - var(--gap) * 2);
+      margin-top: calc(var(--gap) * 3);
+      align-self: flex-end;
+      text-align: left;
+
+      @media (min-width: 768px) {
+        width: 33%;
+        margin-top: 0;
+        align-self: center;
+        text-align: right;
+      }
     }
   }
 }
