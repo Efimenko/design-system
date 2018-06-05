@@ -9,6 +9,10 @@
     }
   }
 
+  &__icon {
+    width: 70px;
+  }
+
   &__content {
     flex: 1;
     min-width: 0;

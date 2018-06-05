@@ -1,6 +1,5 @@
 .counter {
-  flex-basis: var(--counter-media-width);
-  max-width: var(--counter-media-width);
+  width: var(--counter-media-width);
 
   &::before {
     counter-increment: process;
@@ -8,7 +7,7 @@
     background-color: var(--dark-shade);
     display: block;
     width: 100%;
-    line-height: var(--process-media-width);
+    line-height: var(--counter-media-width);
     border-radius: 50%;
     color: var(--light-shade);
     text-align: center;
