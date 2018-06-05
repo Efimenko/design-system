@@ -28,4 +28,8 @@
       @extend %text--type-body;
     }
   }
+
+  &--inline {
+    display: inline;
+  }
 }

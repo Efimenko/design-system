@@ -2,25 +2,15 @@
   display: flex;
 
   &__media {
-    flex-basis: var(--process-media-width);
-    max-width: var(--process-media-width);
     margin-right: calc(var(--gap) * 2);
 
-    + * {
+    & + * {
       margin-top: 0;
     }
+  }
 
-    &::before {
-      counter-increment: process;
-      content: counter(process);
-      background-color: var(--dark-shade);
-      display: block;
-      width: 100%;
-      line-height: var(--process-media-width);
-      border-radius: 50%;
-      color: var(--light-shade);
-      text-align: center;
-    }
+  &__icon {
+    width: 70px;
   }
 
   &__content {
