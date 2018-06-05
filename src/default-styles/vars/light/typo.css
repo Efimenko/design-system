@@ -27,6 +27,13 @@
   --heading-family: var(--base-family);
   --heading-weight: 400;
 
+  --subheading-size: 1.125rem;
+  --subheading-line-height: 1.333;
+  --subheading-color: #676767;
+  --subheading-offset: var(--v-spacer2);
+  --subheading-family: var(--base-family);
+  --subheading-weight: 400;
+
   --body-size: var(--base-font);
   --body-line-height: 1.5;
   --body-color: #676767;

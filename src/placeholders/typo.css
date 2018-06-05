@@ -48,6 +48,18 @@
       }
     }
 
+    &-subheading {
+      font-size: var(--subheading-size);
+      font-family: var(--subheading-family);
+      font-weight: var(--subheading-weight);
+      line-height: var(--subheading-line-height);
+      color: var(--subheading-color);
+
+      & + * {
+        margin-top: var(--subheading-offset);
+      }
+    }
+
     &-body {
       font-size: var(--body-size);
       font-family: var(--body-family);

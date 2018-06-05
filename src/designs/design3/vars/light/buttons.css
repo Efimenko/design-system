@@ -1,0 +1,51 @@
+:root {
+  --btn-radius: 3px;
+  --btn-text-decoration: none;
+  --btn-text-transform: none;
+  --btn-family: var(--base-family);
+
+  --btn-primary-background-color: #32bbcb;
+  --btn-primary-background-image: none;
+  --btn-primary-color: var(--light-shade);
+  --btn-primary-radius: var(--btn-radius);
+  --btn-primary-family: var(--btn-family);
+  --btn-primary-hover-background-color: var(--brand-color-darken-10);
+  --btn-primary-hover-background-image: none;
+  --btn-primary-hover-shadow: none;
+  
+  --btn-secondary-background-color: transparent;
+  --btn-secondary-color: var(--brand-color);
+  --btn-secondary-radius: var(--btn-radius);
+  --btn-secondary-family: var(--btn-family);
+  --btn-secondary-border-size: 2px;
+  --btn-secondary-border-type: solid;
+  --btn-secondary-border-color: currentColor;
+  --btn-secondary-border: var(--btn-secondary-border-size) var(--btn-secondary-border-type) var(--btn-secondary-border-color);
+  --btn-secondary-hover-background-color: transparent;
+  --btn-secondary-hover-color: var(--brand-color-darken-10);
+  --btn-secondary-hover-border-size: 2px;
+  --btn-secondary-hover-border-type: solid;
+  --btn-secondary-hover-border-color: var(--brand-color-darken-10);
+  --btn-secondary-hover-border: var(--btn-secondary-hover-border-size) var(--btn-secondary-hover-border-type) var(--btn-secondary-hover-border-color);
+
+  --btn-link-color: var(--brand-color);
+  --btn-link-background-color: transparent;
+  --btn-link-text-decoration: underline;
+  --btn-link-text-transform: none;
+  --btn-link-hover-color: var(--brand-color);
+  --btn-link-hover-text-decoration: none;
+
+  --btn-sm-padding: 0.9em 1.8em;
+  --btn-sm-font-size: 14px;
+
+  --btn-md-padding: 1em 2em;
+  --btn-md-font-size: var(--base-font);
+
+  --btn-lg-padding: 1em 2em;
+  --btn-lg-font-size: 18px;
+
+  --btn-link-padding: 0.3125em 0;  // для link --btn-text-decoration
+  --btn-link-font-size: var(--base-font);
+
+  --btn-offset: var(--gap);
+}
