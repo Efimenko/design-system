@@ -1,6 +1,13 @@
+@import '../placeholders/layout.css';
 @import './contacts.css';
 @import './footer.css';
 @import './header.css';
 @import './about.css';
 @import './projects.css';
 @import './services.css';
+@import './awards.css';
+@import './partners.css';
+@import './process.css';
+@import './pricing_w2.css';
+@import './video.css';
+@import './careers.css';

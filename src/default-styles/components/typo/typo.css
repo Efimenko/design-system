@@ -16,8 +16,20 @@
       @extend %text--type-heading;
     }
 
+    &-heading-lg {
+      @extend %text--type-heading-lg;
+    }
+
+    &-caption {
+      @extend %text--type-caption;
+    }
+
     &-body {
       @extend %text--type-body;
     }
+  }
+
+  &--inline {
+    display: inline;
   }
 }

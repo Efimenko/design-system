@@ -1,0 +1,57 @@
+.pricing {
+  width: 100%;
+  padding: var(--box-content-padding-md);
+  text-align: center;
+
+  &--main {
+    .pricing {
+      &__icon {
+        width: 90px;
+        height: 90px;
+      }
+
+      &__features {
+        & + * {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+
+  &__heading {
+    & + * {
+      margin-top: 25px;
+    }
+  }
+
+  &__icon {
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & + * {
+      margin-top: 20px;
+    }
+  }
+
+  &__price {
+    & + * {
+      margin-top: 0;
+    }
+  }
+
+  &__price-tag {
+    & + * {
+      margin-top: 30px;
+    }
+  }
+
+  &__features {
+    list-style: none;
+
+    & + * {
+      margin-top: 40px;
+    }
+  }
+}

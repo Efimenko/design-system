@@ -1,4 +1,11 @@
 .layout {
+
+  &--align-center {
+    @media (min-width: 768px) {
+      align-items: center;
+    }
+  }
+
   @media (min-width: 768px) {
     display: flex;
     margin-right: calc(var(--gap) * -2);
