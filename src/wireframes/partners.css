@@ -1,0 +1,57 @@
+[data-block="partners-w1"] {
+  .item {
+    border-bottom: 1px solid var(--dark-shade);
+    margin-right: calc(var(--gap) * -1);
+    margin-left: calc(var(--gap) * -1);
+
+    @media (min-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__content {
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+        flex: 1;
+      }
+    }
+  }
+
+  .logo-wrapper {
+
+    @media (min-width: 768px) {
+      flex-basis: 150px;
+      min-width: 150px;
+      margin-right: calc(var(--gap) * 2);
+    }
+  }
+
+  .text--type-heading {
+    
+    @media (min-width: 768px) {
+      flex-basis: 25%;
+      min-width: 25%;
+      margin-top: 0;
+      margin-right: calc(var(--gap) * 2);
+    }
+  }
+}
+
+[data-block="partners-w2"] {
+  .cards-list__item {
+    border: 1px solid var(--dark-shade);
+    padding: calc(var(--gap) * 2) var(--gap);
+    text-align: center;
+  }
+
+  .logo-wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text--type-body {
+    display: inline;
+  }
+}
