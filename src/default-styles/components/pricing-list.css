@@ -1,0 +1,18 @@
+.pricing-list {
+  display: flex;
+
+  &__inner {
+    @media (min-width: 768px) {
+      @mixin layout-wrapper nowrap;
+    }
+  }
+
+
+  &__item {
+    margin-top: var(--card-top-offset);
+
+    @media (min-width: 768px) {
+      @mixin layout-item 33%;
+    }
+  }
+}

@@ -6,7 +6,8 @@ export default () => {
   createSelectControl(controls, [
     {text: 'default', value: 'default'},
     {text: 'design1', value: 'design1'},
-    {text: 'design2', value: 'design2'}
+    {text: 'design2', value: 'design2'},
+    {text: 'design3', value: 'design3'}
   ],
   'toggle-design')
 }
