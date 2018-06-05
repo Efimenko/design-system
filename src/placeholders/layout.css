@@ -1,0 +1,10 @@
+@define-mixin layout-wrapper $wrap: wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: $wrap;
+}
+
+@define-mixin layout-item $width: 25% {
+  flex-basis: $width;
+  max-width: $width;
+}

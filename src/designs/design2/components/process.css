@@ -1,0 +1,14 @@
+
+.process {
+  &__media {
+    border-color: currentColor;
+
+    &::before {
+      border-radius: 0;
+      background-color: transparent;
+      border-width: 2px;
+      border-color: inherit;
+      color: var(--brand-color);
+    }
+  }
+}
