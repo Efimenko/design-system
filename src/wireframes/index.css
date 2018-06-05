@@ -1,3 +1,4 @@
+@import '../placeholders/layout.css';
 @import './contacts.css';
 @import './footer.css';
 @import './header.css';
@@ -5,3 +6,4 @@
 @import './projects.css';
 @import './services.css';
 @import './process.css';
+@import './pricing_w2.css';

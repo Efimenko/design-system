@@ -9,10 +9,14 @@
 
 
   &__item {
-    margin-top: var(--card-top-offset);
-
     @media (min-width: 768px) {
+      display: flex;
       @mixin layout-item 33%;
+
+      &--main {
+        margin-top: -20px;
+        margin-bottom: -20px;
+      }
     }
   }
 }
