@@ -1,0 +1,9 @@
+.section {
+  &--cover {
+    .text--decorated {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

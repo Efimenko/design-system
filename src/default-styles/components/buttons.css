@@ -4,7 +4,7 @@
   text-align: center;
   text-decoration: var(--btn-text-decoration);
   text-transform: var(--btn-text-transform);
-  line-height: 1; /* ??? */
+  line-height: var(--btn-line-height); /* ??? */
   transition: background .2s ease-in, color .2s ease-in, box-shadow .2s ease-in;
 
   &__border {
@@ -25,7 +25,6 @@
       background-color: var(--btn-primary-background-color);
       background-image: var(--btn-primary-background-image);
       color: var(--btn-primary-color);
-      border-radius: var(--btn-primary-radius);
       font-family: var(--btn-primary-family);
 
       &:hover,
@@ -40,12 +39,10 @@
     &-secondary {
       background-color: var(--btn-secondary-background-color);
       color: var(--btn-secondary-color);
-      border-radius: var(--btn-secondary-radius);
       font-family: var(--btn-primary-family);
 
       .button__border {
         border: var(--btn-secondary-border);
-        border-radius: var(--btn-secondary-radius);
       }
 
       &:hover,
@@ -84,16 +81,31 @@
     &-sm {
       padding: var(--btn-sm-padding);
       font-size: var(--btn-sm-font-size);
+      border-radius: var(--btn-sm-radius);
+
+      .button__border {
+        border-radius: var(--btn-sm-radius);
+      }
     }
 
     &-md {
       padding: var(--btn-md-padding);
       font-size: var(--btn-md-font-size);
+      border-radius: var(--btn-md-radius);
+
+      .button__border {
+        border-radius: var(--btn-md-radius);
+      }
     }
 
     &-lg {
       padding: var(--btn-lg-padding);
       font-size: var(--btn-lg-font-size);
+      border-radius: var(--btn-lg-radius);
+
+      .button__border {
+        border-radius: var(--btn-lg-radius);
+      }
     }
   }
 }
