@@ -1,0 +1,12 @@
+[data-block="header"] {
+  .logo {
+    &--type {
+      &-text {
+        font-size: 38px;
+        line-height: normal;
+        font-weight: 300;
+        // color: #fff;
+      }
+    }
+  }
+}

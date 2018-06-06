@@ -1,0 +1,27 @@
+.card {
+  text-align: center;
+
+  &__image {
+    .picture {
+      // padding-top: 100%;
+    }
+  }
+
+  &--type-2 {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      opacity: 0.7;
+    }
+
+    .card__inner {
+      position: relative;
+    }
+  }
+}

@@ -1,4 +1,4 @@
 :root {
-  --section-footer-offset: 60px; //но к ссылке 29px block-whyб services 57px
-  --section-header-offset: 62px;
+  --section-footer-offset: 40px;
+  --section-header-offset: 40px;
 }

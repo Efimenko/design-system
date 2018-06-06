@@ -1,2 +1,4 @@
-@import './typo/typo.css';
+@import './card.css';
+@import './list-info.css';
+@import './tile.css';
 @import './section.css';

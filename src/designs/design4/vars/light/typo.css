@@ -1,0 +1,71 @@
+:root {
+  --hero-title-size: 5rem;
+  --hero-title-line-height: 1.13;
+  --hero-title-color: #2a2a2a;
+  --hero-title-offset: var(--v-spacer3);
+  --hero-title-family: var(--base-family);
+  --hero-title-weight: 700;
+
+  --title-size: 2.125rem;
+  --title-line-height: 1.18;
+  --title-color: #2a2a2a;
+  --title-offset: var(--v-spacer3);
+  --title-family: var(--base-family);
+  --title-weight: 700;
+
+  --subtitle-size: 1.25rem;
+  --subtitle-line-height: 1.5;
+  --subtitle-color: #787878;
+  --subtitle-offset: var(--v-spacer3);
+  --subtitle-family: var(--base-family);
+  --subtitle-weight: 500;
+
+  --heading-lg-size: 1.75rem;
+  --heading-lg-line-height: 1.14;
+  --heading-lg-color: #2a2a2a;
+  --heading-lg-offset: var(--v-spacer3);
+  --heading-lg-family: var(--base-family);
+  --heading-lg-weight: 700;
+
+  --heading-size: 1.625rem;
+  --heading-line-height: 1.23;
+  --heading-color: #2a2a2a;
+  --heading-offset: var(--v-spacer3);
+  --heading-family: var(--base-family);
+  --heading-weight: 500;
+
+  --subheading-size: 1.25rem;
+  --subheading-line-height: 1.5;
+  --subheading-color: #2a2a2a;
+  --subheading-offset: var(--v-spacer3);
+  --subheading-family: var(--base-family);
+  --subheading-weight: 500;
+
+  --caption-size: 0.6875rem;
+  --caption-line-height: 1.82;
+  --caption-color: #787878;
+  --caption-offset: var(--v-spacer2);
+  --caption-family: var(--base-family);
+  --caption-weight: 400;
+
+  --body-size: 0.9375rem;
+  --body-line-height: 1.67;
+  --body-color: #787878;
+  --body-offset: var(--v-spacer2);
+  --body-family: var(--base-family);
+  --body-weight: 400;
+
+  --small-size: 0.6875rem;
+  --small-line-height: 1.82;
+  --small-color: #787878;
+  --small-offset: var(--v-spacer2);
+  --small-family: var(--base-family);
+  --small-weight: 400;
+
+  --quote-size: 0.9375rem;
+  --quote-line-height: 1.67;
+  --quote-color: #787878;
+  --quote-offset: var(--v-spacer2);
+  --quote-family: var(--base-family);
+  --quote-weight: 400;
+}

@@ -1,9 +1,9 @@
 :root {
-  --light-shade: #fff;
-  --brand-color: #32BBCB;
-  --dark-shade: #4748D6;
+  --light-shade: #FFFFFF;
+  --light-accent: #B940AA;
+  --brand-color: #32bbcb;
+  --dark-accent: #4748D6;
+  --dark-shade: #272F3C;
 
-  --brand-color-darken-10: #38d6e9;
-
-  --light-accent: ##B940AA;
+  --brand-color-darken-10: #2ca8b6; /* Must generate in editor */
 }

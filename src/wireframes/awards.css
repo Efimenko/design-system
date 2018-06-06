@@ -1,0 +1,14 @@
+[data-block="awards-w2"] {
+  .section__content {
+    display: flex;
+  }
+
+  .section__header {
+    margin-right: 30px;
+    flex-basis: 33%;
+  }
+
+  .cards-list {
+    margin-top: 0;
+  }
+}

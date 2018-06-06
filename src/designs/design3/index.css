@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import './vars/index.css';
+@import '../../placeholders/typo.css';
 @import './components/index.css';
+@import './layouts/index.css';

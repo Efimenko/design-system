@@ -7,7 +7,8 @@ export default () => {
     {text: 'default', value: 'default'},
     {text: 'design1', value: 'design1'},
     {text: 'design2', value: 'design2'},
-    {text: 'design3', value: 'design3'}
+    {text: 'design3', value: 'design3'},
+    {text: 'design4', value: 'design4'}
   ],
   'toggle-design')
 }

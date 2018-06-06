@@ -27,5 +27,17 @@
     &-body {
       @extend %text--type-body;
     }
+
+    &-small {
+      @extend %text--type-small;
+    }
+
+    &-quote {
+      @extend %text--type-quote;
+    }
+  }
+
+  &--inline {
+    display: inline;
   }
 }

@@ -2,7 +2,7 @@
   "name": "design-system",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "demo.html",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"

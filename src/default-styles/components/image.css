@@ -12,6 +12,12 @@
     }
   }
 
+  &--type-video {
+    &__image {
+      object-fit: unset;
+    }
+  }
+
   &__image {
     position: absolute;
     width: 100%;

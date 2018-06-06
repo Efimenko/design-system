@@ -1,4 +1,19 @@
 .layout {
+
+  &--align-center {
+    @media (min-width: 768px) {
+      align-items: center;
+    }
+  }
+
+  &--reverse {
+    .layout__col {
+      &:first-of-type {
+        order: 3;
+      }
+    }
+  }
+
   @media (min-width: 768px) {
     display: flex;
     margin-right: calc(var(--gap) * -2);

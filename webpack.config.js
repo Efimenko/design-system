@@ -9,6 +9,7 @@ const extractWireframesStyles = new ExtractTextPlugin('wireframes.css');
 const extractDesign1Styles = new ExtractTextPlugin('design1.css');
 const extractDesign2Styles = new ExtractTextPlugin('design2.css');
 const extractDesign3Styles = new ExtractTextPlugin('design3.css');
+const extractDesign4Styles = new ExtractTextPlugin('design4.css');
 
 module.exports = {
   mode: 'development',
@@ -48,6 +49,10 @@ module.exports = {
         use: extractDesign3Styles.extract([ 'css-loader', 'postcss-loader' ])
       },
       {
+        test: /designs\/design4\/.+\.css$/,
+        use: extractDesign4Styles.extract([ 'css-loader', 'postcss-loader' ])
+      },
+      {
         test: /\.(png|jpg|gif)$/,
         use: [
           {
@@ -73,6 +78,7 @@ module.exports = {
     extractDesign1Styles,
     extractDesign2Styles,
     extractDesign3Styles,
+    extractDesign4Styles,
     new CleanWebpackPlugin(['dist']),
     new webpack.HotModuleReplacementPlugin()
   ]
