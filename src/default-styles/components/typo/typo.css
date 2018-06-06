@@ -20,12 +20,24 @@
       @extend %text--type-heading-lg;
     }
 
+    &-subheading {
+      @extend %text--type-subheading;
+    }
+
     &-caption {
       @extend %text--type-caption;
     }
 
     &-body {
       @extend %text--type-body;
+    }
+
+    &-small {
+      @extend %text--type-small;
+    }
+
+    &-quote {
+      @extend %text--type-quote;
     }
   }
 

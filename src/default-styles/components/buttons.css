@@ -4,7 +4,7 @@
   text-align: center;
   text-decoration: var(--btn-text-decoration);
   text-transform: var(--btn-text-transform);
-  line-height: 1; /* ??? */
+  line-height: var(--btn-line-height); /* ??? */
   transition: background .2s ease-in, color .2s ease-in, box-shadow .2s ease-in;
 
   &__border {
@@ -26,7 +26,6 @@
       background-image: var(--btn-primary-background-image);
       box-shadow: var(--btn-primary-shadow);
       color: var(--btn-primary-color);
-      border-radius: var(--btn-primary-radius);
       font-family: var(--btn-primary-family);
 
       &:hover,
@@ -87,16 +86,31 @@
     &-sm {
       padding: var(--btn-sm-padding);
       font-size: var(--btn-sm-font-size);
+      border-radius: var(--btn-sm-radius);
+
+      .button__border {
+        border-radius: var(--btn-sm-radius);
+      }
     }
 
     &-md {
       padding: var(--btn-md-padding);
       font-size: var(--btn-md-font-size);
+      border-radius: var(--btn-md-radius);
+
+      .button__border {
+        border-radius: var(--btn-md-radius);
+      }
     }
 
     &-lg {
       padding: var(--btn-lg-padding);
       font-size: var(--btn-lg-font-size);
+      border-radius: var(--btn-lg-radius);
+
+      .button__border {
+        border-radius: var(--btn-lg-radius);
+      }
     }
   }
 }

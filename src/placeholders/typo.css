@@ -60,6 +60,18 @@
       }
     }
 
+    &-subheading {
+      font-size: var(--subheading-size);
+      font-family: var(--subheading-family);
+      font-weight: var(--subheading-weight);
+      line-height: var(--subheading-line-height);
+      color: var(--subheading-color);
+
+      & + * {
+        margin-top: var(--subheading-offset);
+      }
+    }
+
     &-caption {
       font-size: var(--caption-size);
       font-family: var(--caption-family);
@@ -81,6 +93,30 @@
 
       & + * {
         margin-top: var(--body-offset);
+      }
+    }
+
+    &-small {
+      font-size: var(--small-size);
+      font-family: var(--small-family);
+      font-weight: var(--small-weight);
+      line-height: var(--small-line-height);
+      color: var(--small-color);
+
+      & + * {
+        margin-top: var(--small-offset);
+      }
+    }
+
+    &-quote {
+      font-size: var(--quote-size);
+      font-family: var(--quote-family);
+      font-weight: var(--quote-weight);
+      line-height: var(--quote-line-height);
+      color: var(--quote-color);
+
+      & + * {
+        margin-top: var(--quote-offset);
       }
     }
   }
