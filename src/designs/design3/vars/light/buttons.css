@@ -1,0 +1,32 @@
+:root {
+  --btn-radius: 3px;
+  --btn-text-transform: none;
+  --btn-family: 'Lato', sans-serif;
+
+  --btn-primary-background-color: var(--brand-color);
+  --btn-primary-shadow:  0 4px 12px 0 rgba(33, 67, 71, 0.55);
+  --btn-primary-hover-background-color: var(--brand-color);
+  --btn-primary-hover-shadow: 0 4px 12px 0 rgba(33, 67, 71, 0.55);;
+
+  --btn-secondary-background-color: transparent;
+  --btn-secondary-color: var(--brand-color);
+  --btn-secondary-border-size: 2px;
+  --btn-secondary-border-color: #f0f4f7;
+
+  --btn-secondary-hover-background-color: transparent;
+  --btn-secondary-hover-color: var(--brand-color);
+  --btn-secondary-hover-border-size: 2px;
+  --btn-secondary-hover-border-color: var(--brand-color);
+
+  --btn-link-color: var(--brand-color);
+  --btn-link-background-color: transparent;
+
+  --btn-link-hover-color: var(--brand-color);
+
+  --btn-sm-padding: 0.7692em 3.1538em;
+  --btn-sm-font-size: 13px;
+  --btn-md-padding: 0.93em 3.4em;
+  --btn-md-font-size: 15px;
+  --btn-lg-padding: 1.2666em 4.0666em;
+  --btn-lg-font-size: 15px;
+}

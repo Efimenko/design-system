@@ -1,0 +1,20 @@
+[data-block="header"] {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent !important;
+
+  &.dark-block {
+    background-color: transparent !important;
+  }
+
+  .layout__col:nth-child(2) {
+    justify-content: flex-start;
+  }
+
+  .button {
+    display: none;
+  }
+}

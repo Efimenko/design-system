@@ -1,0 +1,19 @@
+[data-block="contacts"] {
+  .layout {
+    margin-right: 0;
+  }
+
+  .layout__col {
+    margin-right: 0;
+    &:nth-child(2) {
+      flex-grow: 0;
+      flex-basis: 30.833%;
+      align-items: center;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+
+  .logo-wrapper {
+  }
+}

@@ -1,0 +1,17 @@
+[data-block="about"] {
+  .layout {
+    &__col:nth-child(1) {
+      flex: 1;
+    }
+    &__col:nth-child(2) {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .picture {
+    padding-top: 120%;
+  }
+}

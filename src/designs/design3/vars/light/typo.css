@@ -1,0 +1,38 @@
+:root {
+  @media (min-width: 768px) {
+    --hero-title-size: 3.875rem;
+  }
+  --hero-title-size: 3.875rem;
+  --hero-title-line-height: normal;
+  --hero-title-color: #343E4D;
+  --hero-title-offset: var(--v-spacer3);
+  --hero-title-weight: 300;
+
+  --title-size: 2.625rem;
+  --title-line-height: normal;
+  --title-color: #343E4D;
+  --title-offset: var(--v-spacer3);
+  --title-weight: 400;
+
+  --subtitle-size: 1rem;
+  --subtitle-line-height: 1.75;
+  --subtitle-color: #7E8A99;
+  --subtitle-family: 'OpenSans', sans-serif;
+
+  --heading-size: 1.625rem;
+  --heading-line-height: 1.3076;
+  --heading-color: #323435;
+
+  --heading-lg-size: 1.625rem;
+  --heading-lg-line-height: 1.3076;
+  --heading-lg-color: #323435;
+
+  --caption-size: 0.75rem;
+  --caption-line-height: normal;
+  --caption-color: #7E8A99;
+
+  --body-size: 0.875rem;
+  --body-line-height: 2;
+  --body-color: #7E8A99;
+  --body-weight: 400;
+}
