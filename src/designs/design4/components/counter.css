@@ -1,0 +1,7 @@
+.counter::before {
+  content: counter(process)'/';
+  background-color: transparent;
+  color: currentColor;
+  
+  @extend %text--type-heading;
+}
