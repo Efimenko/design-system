@@ -24,6 +24,7 @@
     &-primary {
       background-color: var(--btn-primary-background-color);
       background-image: var(--btn-primary-background-image);
+      box-shadow: var(--btn-primary-shadow);
       color: var(--btn-primary-color);
       border-radius: var(--btn-primary-radius);
       font-family: var(--btn-primary-family);
@@ -41,11 +42,13 @@
       background-color: var(--btn-secondary-background-color);
       color: var(--btn-secondary-color);
       border-radius: var(--btn-secondary-radius);
+      box-shadow: var(--btn-secondary-shadow);
       font-family: var(--btn-primary-family);
 
       .button__border {
         border: var(--btn-secondary-border);
         border-radius: var(--btn-secondary-radius);
+        box-shadow: var(--btn-secondary-shadow);
       }
 
       &:hover,

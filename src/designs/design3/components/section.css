@@ -1,0 +1,14 @@
+.section {
+  &--cover {
+    .text--type-title {
+      @extend %text--type-subtitle;
+    }
+
+    .section__inner {
+
+      @media (min-width: 768px) {
+        padding: 0 70px;
+      }
+    }
+  }
+}

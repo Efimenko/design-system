@@ -1,0 +1,32 @@
+.text {
+  &--type {
+    &-hero-title {
+      position: relative;
+
+      &.text--decorated {
+        &::before {
+          content: "";
+          position: absolute;
+          top: calc(100% + 20px);
+          left: 0;
+          width: 50px;
+          height: 4px;
+          background: currentColor;
+
+          @media (min-width: 768px) {
+            left: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            right: calc(100% + 20px);
+          }
+        }
+
+        & + * {
+          @media (max-width: 767px) {
+            margin-top: var(--v-spacer6);
+          }
+        }
+      }
+    }
+  }
+}
