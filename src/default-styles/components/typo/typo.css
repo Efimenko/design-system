@@ -44,4 +44,8 @@
   &--inline {
     display: inline;
   }
+
+  &--align-center {
+    text-align: center;
+  }
 }

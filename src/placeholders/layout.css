@@ -1,10 +1,20 @@
-@define-mixin layout-wrapper $wrap: wrap {
-  width: 100%;
-  display: flex;
-  flex-wrap: $wrap;
+@define-mixin layout-wrapper
+  $wrap: wrap,
+  $item-right-offset: calc(var(--gap) * 2),
+  $item-top-offset: var(--card-top-offset) {
+    width: calc(100% + $item-right-offset);
+    display: flex;
+    flex-wrap: $wrap;
+    margin-right: calc($item-right-offset * -1);
+    margin-top: calc($item-top-offset * -1);
 }
 
-@define-mixin layout-item $width: 25% {
-  flex-basis: $width;
-  max-width: $width;
+@define-mixin layout-item
+  $width: 25%,
+  $top-offset: var(--card-top-offset),
+  $right-offset: calc(var(--gap) * 2) {
+    flex-basis: calc($width - $right-offset);
+    max-width: calc($width - $right-offset);
+    margin-right: $right-offset;
+    margin-top: $top-offset;
 }

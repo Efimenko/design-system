@@ -1,15 +1,11 @@
 [data-block="services-w2"] {
-  .cards-list {
+  .list {
     &__inner {
-      margin-right: 0;
-      margin-top: 0;
+      @mixin layout-wrapper wrap, 0px, 0px;
     }
 
     &__item {
-      margin-right: 0;
-      flex-basis: 50%;
-      max-width: 50%;
-      margin-top: 0;
+      @mixin layout-item 50%, 0px, 0px;
     }
   }
 }

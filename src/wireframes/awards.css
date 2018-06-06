@@ -5,10 +5,11 @@
 
   .section__header {
     margin-right: 30px;
-    flex-basis: 33%;
-  }
+    width: 270px;
+    flex-shrink: 0;
 
-  .cards-list {
-    margin-top: 0;
+    & + * {
+      margin-top: 0;
+    }
   }
 }
