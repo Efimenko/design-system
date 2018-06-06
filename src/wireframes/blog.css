@@ -1,26 +1,22 @@
 [data-block="blog-w1"] {
   .cards-list {
     &__inner {
-      margin-right: auto;
-      margin-left: auto;
-      justify-content: flex-start;
+
+      @media (min-width: 768px) {
+        justify-content: flex-start;
+      }
+
+      @media (min-width: 992px) {
+        justify-content: center;
+      }
     }
 
     &__item {
       text-align: left;
-      padding: var(--gap);
-      flex-basis: 100%;
-      max-width: 100%;
-
-      @media (min-width: 768px) {
-        margin-right: 0;
-        flex-basis: 50%;
-        max-width: 50%;
-      }
 
       @media (min-width: 992px) {
-        flex-basis: 33.33%;
-        max-width: 33.33%;
+        flex-basis: calc(33.33% - var(--gap) * 2);
+        max-width: calc(33.33% - var(--gap) * 2);
       }
     }
   }
