@@ -1,0 +1,36 @@
+.text {
+  &--type {
+    &-title {
+      &.text--decorated {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 46px;
+          height: 2px;
+          top: calc(100% + 10px);
+          background-color: var(--brand-color);
+        }
+
+        & + * {
+          margin-top: var(--v-spacer5);
+        }
+
+        &.text--align-center {
+          &::after {
+            left: 50%;
+            margin-left: -23px;
+          }
+        }
+
+        &.text--align-right {
+          &::after {
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

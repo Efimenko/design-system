@@ -27,6 +27,16 @@
   --heading-family: var(--base-family);
   --heading-weight: 400;
 
+  --subheading-size: 1.125rem;
+  --subheading-line-height: 1.333;
+  --subheading-color: #676767;
+  --subheading-offset: var(--v-spacer2);
+  --subheading-family: var(--base-family);
+  --subheading-weight: 400;
+
+  --caption-size: 0.875rem;
+  --caption-line-height: 1.333;
+  --caption-color: #979797;
   --heading-lg-size: 2rem;
   --heading-lg-line-height: 1.2187;
   --heading-lg-color: #000;
