@@ -1,10 +1,10 @@
-[data-block="awards-w2"] {
+/* check */[data-block="awards-w2"] {
   .section__content {
     display: flex;
   }
 
   .section__header {
-    margin-right: 30px;
+    margin-right: calc(var(--gap) * 2);
     width: 270px;
     flex-shrink: 0;
 

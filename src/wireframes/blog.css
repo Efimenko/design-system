@@ -1,38 +1,5 @@
-[data-block="blog-w1"] {
-  .cards-list {
-    &__inner {
-
-      @media (min-width: 768px) {
-        justify-content: flex-start;
-      }
-
-      @media (min-width: 992px) {
-        justify-content: center;
-      }
-    }
-
-    &__item {
-      text-align: left;
-
-      @media (min-width: 992px) {
-        flex-basis: calc(33.33% - var(--gap) * 2);
-        max-width: calc(33.33% - var(--gap) * 2);
-      }
-    }
-  }
-
-  .blog__text {
-    margin-top: var(--v-spacer1);
-  }
-
-  .btns-group {
-    margin-top: var(--v-spacer2);
-  }
-}
-
 [data-block="blog-w2"] {
   .cards-list__item:first-of-type {
     width: 60%;
   }
-
 }

@@ -1,6 +1,6 @@
 @define-mixin layout-wrapper
   $wrap: wrap,
-  $item-right-offset: calc(var(--gap) * 2),
+  $item-right-offset: var(--gap) * 2,
   $item-top-offset: var(--card-top-offset) {
     width: calc(100% + $item-right-offset);
     display: flex;

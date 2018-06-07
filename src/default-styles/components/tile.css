@@ -1,39 +1,36 @@
 .tile {
-  list-style: none;
-  padding-left: 0;
 
-  &__item {
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
+  @media (min-width: 768px) {
+    @mixin layout-wrapper wrap, 0px, 0px;
+    min-height: 360px;
+  }
 
-    @media (min-width: 992px) {
-      display: flex;
-      min-height: 360px;
-      margin-bottom: 0;
+  &__col {
+
+    @media (min-width: 768px) {
+      @mixin layout-item 50%, 0px, 0px;
     }
 
-    &-content {
-      padding: 20px 0;
+    &--content {
+      padding: var(--box-content-padding-sm) 0;
       order: 1;
 
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         order: 0;
-        padding: var(--box-content-padding-lg);
-        flex-basis: 50%;
+        padding: var(--box-content-padding-md);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
       }
+
+      @media (min-width: 992px) {
+        padding: var(--box-content-padding-md) var(--box-content-padding-lg);
+      }
     }
 
-    &-image {
+    &--image {
       position: relative;
-
-      @media (min-width: 768px) {
-        flex-basis: 50%;
-      }
 
       .picture {
         position: static;
@@ -41,23 +38,23 @@
     }
   }
 
-  &__item:nth-child(even) {
-    .tile__item-content {
+  &:nth-child(even) {
+    .tile__col--content {
       order: 1;
     }
   }
 
   &--type-2 {
-    .tile__item:nth-child(odd) {
-      .tile__item-content {
+    &:nth-child(odd) {
+      .tile__col--content {
         align-items: flex-end;
       }
     }
-    .tile__item:nth-child(even) {
+    &:nth-child(even) {
       justify-content: flex-end;
     }
 
-    .tile__item-inner {
+    .tile__col-inner {
       max-width: 370px;
     }
   }

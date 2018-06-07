@@ -1,63 +1,73 @@
 .list {
   &--direction-row {
-    @media (min-width: 768px) {
-      display: flex;
-    }
+    display: flex;
 
     .list {
       &__inner {
+        width: 100%;
+        margin-top: calc(var(--card-top-offset) * -1);
+
         @media (min-width: 768px) {
           @mixin layout-wrapper;
         }
       }
 
       &__item {
-
-        @media (min-width: 768px) {
-          @mixin layout-item 50%;
-        }
-
-        @media (min-width: 992px) {
-          @mixin layout-item 25%;
-        }
+        margin-top: var(--card-top-offset);
       }
     }
   }
 
-  &__inner {
-    list-style: none;
+  &--direction-column {
+    display: flex;
+
+    .list {
+      &__inner {
+        width: 100%;
+        margin-top: calc(var(--card-top-offset) * -1);
+      }
+
+      &__item {
+        margin-top: var(--card-top-offset);
+      }
+    }
   }
 
   &--gap-none {
     .list {
       &__inner {
+
         @media (min-width: 768px) {
-          @mixin layout-wrapper wrap, 0px;
+          @mixin layout-wrapper wrap, 0px, 0px;
         }
       }
 
       &__item {
 
         @media (min-width: 768px) {
-          @mixin layout-item 50%, 0px;
-        }
-
-        @media (min-width: 768px) {
-          @mixin layout-item 25%, 0px;
+          margin-top: 0;
         }
       }
     }
   }
+}
 
-  /*
-  &--three-col {
-    .cards-list__item {
+@for $i from 1 to 12 {
+  .list--cols-$i {
+    .list__item {
 
       @media (min-width: 768px) {
-        flex-basis: calc(33.3333% - var(--gap) * 2);
-        max-width: calc(33.3333% - var(--gap) * 2);
+        @mixin layout-item 100% / $(i);
+      }
+    }
+
+    &.list--gap-none {
+      .list__item {
+
+        @media (min-width: 768px) {
+          @mixin layout-item calc(100% / $(i)), 0px, 0px;
+        }
       }
     }
   }
-  */
 }

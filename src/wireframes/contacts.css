@@ -1,27 +1,25 @@
-[data-block="contacts"] {
+/* check */[data-block="contacts"] {
   .layout__col {
     &:nth-child(1) {
-      flex: 3;
+      flex: 1;
+      max-width: none;
     }
+
     &:nth-child(2) {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      flex: 1;
-      min-width: 220px;
+      @mixin layout-item 270px;
+    }
+  }
+
+  .text--type-heading {
+    & + * {
+      margin-top: 0;
     }
   }
 
   .logo-wrapper {
     margin-bottom: auto;
-  }
-}
-
-[data-block="contacts-w2"] {
-  text-align: center;
-
-  .cards-list__item {
-    flex-basis: calc(33.3333% - 2 * var(--gap));
-    max-width: calc(33.3333% - 2 * var(--gap));
   }
 }

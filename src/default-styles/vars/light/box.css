@@ -1,4 +1,5 @@
 :root {
-  --box-content-padding-lg: 50px 80px;
+  --box-content-padding-lg: 80px;
   --box-content-padding-md: 50px;
+  --box-content-padding-sm: 20px;
 }
