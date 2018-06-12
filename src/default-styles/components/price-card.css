@@ -1,10 +1,13 @@
-.pricing {
+.price-card {
   width: 100%;
   padding: var(--box-content-padding-md);
   text-align: center;
 
   &--main {
-    .pricing {
+    margin-top: -20px;
+    margin-bottom: -20px;
+
+    .price-card {
       &__icon {
         width: 90px;
         height: 90px;

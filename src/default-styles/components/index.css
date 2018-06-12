@@ -1,5 +1,6 @@
 @import './typo/typo.css';
 @import './layout.css';
+@import './list.css';
 @import './section.css';
 @import './buttons.css';
 @import './btns-group.css';
@@ -13,9 +14,7 @@
 @import './nav.css';
 @import './horizontal-items.css';
 @import './process.css';
-@import './pricing-list.css';
-@import './pricing.css';
+@import './price-card.css';
 @import './accordion.css';
 @import './counter.css';
-@import './list.css';
 @import './icon-box.css';

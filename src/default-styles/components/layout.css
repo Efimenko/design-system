@@ -2,7 +2,7 @@
   display: flex;
 
   &__inner {
-    margin-top: calc(var(--card-top-offset) * -1);
+    width: 100%;
 
     @media (min-width: 768px) {
       @mixin layout-wrapper;
@@ -10,7 +10,10 @@
   }
 
   &__col {
-    margin-top: var(--card-top-offset);
+
+    @media (min-width: 768px) {
+      padding: 0 var(--gap);
+    }
   }
 
   &--items-center {
@@ -18,14 +21,48 @@
       align-items: center;
     }
   }
+
+  &--gap-none {
+    .layout {
+      &__inner {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      &__col {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
 }
 
 @for $i from 1 to 12 {
-  .layout--cols-$i {
-    .layout__col {
-
+  .layout__col {
+    &--sm-$i {
       @media (min-width: 768px) {
-        @mixin layout-item 100% / $(i);
+        @mixin layout-item calc(8.3333333333% * $(i));
+      }
+    }
+  }
+}
+
+@for $i from 1 to 12 {
+  .layout__col {
+    &--md-$i {
+      @media (min-width: 992px) {
+        @mixin layout-item calc(8.3333333333% * $(i));
+      }
+    }
+  }
+}
+
+@for $i from 1 to 12 {
+  .layout__col {
+    &--lg-$i {
+      @media (min-width: 1200px) {
+        @mixin layout-item calc(8.3333333333% * $(i));
       }
     }
   }
