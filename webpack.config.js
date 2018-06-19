@@ -30,27 +30,27 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: [path.resolve(__dirname, 'src/wireframes'), path.resolve(__dirname, 'src/designs')],
-        use: extractDefaultStyles.extract([ 'css-loader', 'postcss-loader' ])
+        use: extractDefaultStyles.extract([ 'css-loader', 'sass-loader' ])
       },
       {
         test: /wireframes\/.+\.css$/,
-        use: extractWireframesStyles.extract([ 'css-loader', 'postcss-loader' ])
+        use: extractWireframesStyles.extract([ 'css-loader', 'sass-loader'])
       },
       {
         test: /designs\/design1\/.+\.css$/,
-        use: extractDesign1Styles.extract([ 'css-loader', 'postcss-loader' ])
+        use: extractDesign1Styles.extract([ 'css-loader', 'sass-loader'])
       },
       {
         test: /designs\/design2\/.+\.css$/,
-        use: extractDesign2Styles.extract([ 'css-loader', 'postcss-loader' ])
+        use: extractDesign2Styles.extract([ 'css-loader', 'sass-loader'])
       },
       {
         test: /designs\/design3\/.+\.css$/,
-        use: extractDesign3Styles.extract([ 'css-loader', 'postcss-loader' ])
+        use: extractDesign3Styles.extract([ 'css-loader', 'sass-loader'])
       },
       {
         test: /designs\/design4\/.+\.css$/,
-        use: extractDesign4Styles.extract([ 'css-loader', 'postcss-loader' ])
+        use: extractDesign4Styles.extract([ 'css-loader', 'sass-loader'])
       },
       {
         test: /\.(png|jpg|gif)$/,

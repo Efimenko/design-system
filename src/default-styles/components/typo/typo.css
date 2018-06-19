@@ -16,6 +16,10 @@
       @extend %text--type-heading;
     }
 
+    &-heading-lg {
+      @extend %text--type-heading-lg;
+    }
+
     &-subheading {
       @extend %text--type-subheading;
     }

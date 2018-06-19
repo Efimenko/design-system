@@ -1,0 +1,37 @@
+@mixin layout($width: 50%, $exception: ()) {
+  &__inner {
+    margin-top: calc(var(--layout-item-top-offset) * -1);
+
+    @media (min-width: 768px) {
+      width: calc(100% + var(--gap) * 2);
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: calc(var(--gap) * -1);
+      margin-left: calc(var(--gap) * -1);
+    }
+  }
+
+  &__item {
+    margin-top: var(--layout-item-top-offset);
+
+    @media (min-width: 768px) {
+      flex-basis: $width;
+      max-width: $width;
+      padding: 0 var(--gap);
+    }
+
+    @each $index, $val in $exception {
+      @if($val == 1) {
+        &:nth-child(#{$index}) {
+          flex: 1;
+          max-width: none;
+        }
+      } @else {
+        &:nth-child(#{$index}) {
+          flex-basis: $val;
+          max-width: $val;
+        }
+      }
+    }
+  }
+}

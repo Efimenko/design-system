@@ -34,25 +34,4 @@
       position: static;
     }
   }
-
-  &:nth-child(even) {
-    .tile__col--content {
-      order: 1;
-    }
-  }
-
-  &--type-2 {
-    &:nth-child(odd) {
-      .tile__col--content {
-        justify-content: flex-end;
-      }
-    }
-    &:nth-child(even) {
-      justify-content: flex-end;
-    }
-
-    .tile__content {
-      max-width: 500px;
-    }
-  }
 }

@@ -6,18 +6,18 @@
   }
 
   .layout {
-    align-items: center;
-    &__col {
-      &:nth-child(1) {
+    @media (min-width: 768px) {
+      @include layout($exception: (1: 320px, 2: 1));
+    }
 
-        @media (min-width: 768px) {
-          max-width: 320px;
-        }
-      }
+    &__inner {
+      justify-content: center;
+      align-items: center;
+    }
 
+    &__item {
       &:nth-child(2) {
         @media (min-width: 768px) {
-          flex: 1;
           display: flex;
           justify-content: flex-end;
           align-items: center;

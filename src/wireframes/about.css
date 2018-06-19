@@ -21,18 +21,25 @@
 [data-block="about-w3"] {
   padding: 0;
 
-  .layout {
-    margin-right: 0;
+  .box {
+    padding: 0 var(--box-content-padding-sm);
 
-    &__col{
-      margin-right: 0;
+    @media (min-width: 768px) {
+      padding: var(--box-content-padding-md) var(--box-content-padding-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-      &:nth-child(2) {
-        padding: var(--box-content-padding-md) var(--box-content-padding-lg);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
+    @media (min-width: 992px) {
+      padding: var(--box-content-padding-md) var(--box-content-padding-lg);
+    }
+  }
+
+  .layout__item {
+
+    @media (min-width: 768px) {
+      display: flex;
     }
   }
 }
@@ -40,8 +47,7 @@
 [data-block="about-w4"] {
   text-align: center;
 
-  .cards-list__item {
-    flex-basis: calc(33.33333% - var(--gap) * 2);
-    max-width: calc(33.33333% - var(--gap) * 2);
+  .list{
+    @include layout(33.333333%);
   }
 }

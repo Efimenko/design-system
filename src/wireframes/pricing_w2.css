@@ -1,9 +1,0 @@
-[data-block="pricing_w2"] {
-  .pricing-list {
-    margin-right: calc(var(--gap) * -2);
-    &__item {
-      @mixin layout-item calc(33% - var(--gap) * 2);
-      margin-right: calc(var(--gap) * 2);
-    }
-  }
-}

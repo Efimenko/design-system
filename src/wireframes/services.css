@@ -1,0 +1,11 @@
+[data-block="services"] {
+  .list {
+    @include layout(25%);
+  }
+}
+
+[data-block="services-w2"] {
+  .list {
+    @include layout(50%);
+  }
+}

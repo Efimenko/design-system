@@ -4,18 +4,21 @@
 
   &__inner {
     width: 100%;
-    margin-top: calc(var(--card-top-offset) * -1);
+    margin-top: calc(var(--list-item-top-offset) * -1);
   }
 
+  @include layout(33.33333%);
+
+
   &__item {
-    margin-top: var(--card-top-offset);
+    margin-top: var(--list-item-top-offset);
 
     @media (min-width: 768px) {
       display: flex;
     }
   }
 
-  &--gap-none {
+  &.list--gap-none {
     .list {
       &__inner {
 
@@ -28,6 +31,8 @@
 
         @media (min-width: 768px) {
           margin-top: 0;
+          padding-left: 0;
+          padding-right: 0;
         }
       }
     }

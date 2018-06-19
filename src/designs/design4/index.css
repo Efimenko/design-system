@@ -1,4 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
 @import './vars/index.css';
-@import '../../placeholders/index.css';
+@import '../../placeholders/index.scss';
 @import './components/index.css';

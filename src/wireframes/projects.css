@@ -1,6 +1,51 @@
+[data-block="projects"] {
+  .list {
+    @include layout(100%);
+
+    &__item:nth-child(even) {
+      .tile__col--content {
+        order: 1;
+      }
+    }
+  }
+}
+
 [data-block="projects-w2"] {
   .section__inner {
     max-width: none;
     padding: 0;
+  }
+
+  .list {
+    @include layout(100%);
+
+    &__item {
+      min-height: 400px;
+
+      &:nth-child(even) {
+        .tile__col {
+          &--content {
+            justify-content: flex-start;
+          }
+        }
+
+        .layout__inner {
+          justify-content: flex-end;
+        }
+      }
+    }
+
+
+  }
+
+  .tile {
+    &__col {
+      &--content {
+        justify-content: flex-end;
+      }
+    }
+    &__content {
+      max-width: 580px;
+    }
   }
 }

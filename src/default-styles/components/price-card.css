@@ -3,9 +3,14 @@
   padding: var(--box-content-padding-md);
   text-align: center;
 
+  @media (min-width: 768px) {
+    margin-top: var(--v-spacer5);
+    margin-bottom: var(--v-spacer5);
+  }
+
   &--main {
-    margin-top: -20px;
-    margin-bottom: -20px;
+    margin-top: 0;
+    margin-bottom: 0;
 
     .price-card {
       &__icon {
@@ -23,7 +28,7 @@
 
   &__heading {
     & + * {
-      margin-top: 25px;
+      margin-top: var(--v-spacer4);
     }
   }
 
@@ -34,7 +39,7 @@
     margin-right: auto;
 
     & + * {
-      margin-top: 20px;
+      margin-top: var(--v-spacer4);
     }
   }
 

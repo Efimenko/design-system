@@ -1,68 +1,20 @@
 .layout {
   display: flex;
+  @include layout();
 
-  &__inner {
-    width: 100%;
-
-    @media (min-width: 768px) {
-      @mixin layout-wrapper;
-    }
-  }
-
-  &__col {
-
-    @media (min-width: 768px) {
-      padding: 0 var(--gap);
-    }
-  }
-
-  &--items-center {
-    .layout__inner {
-      align-items: center;
-    }
-  }
-
-  &--gap-none {
+  &.layout--gap-none {
     .layout {
       &__inner {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+        margin-top: 0;
       }
 
-      &__col {
+      &__item {
         padding-left: 0;
         padding-right: 0;
-      }
-    }
-  }
-}
-
-@for $i from 1 to 12 {
-  .layout__col {
-    &--sm-$i {
-      @media (min-width: 768px) {
-        @mixin layout-item calc(8.3333333333% * $(i));
-      }
-    }
-  }
-}
-
-@for $i from 1 to 12 {
-  .layout__col {
-    &--md-$i {
-      @media (min-width: 992px) {
-        @mixin layout-item calc(8.3333333333% * $(i));
-      }
-    }
-  }
-}
-
-@for $i from 1 to 12 {
-  .layout__col {
-    &--lg-$i {
-      @media (min-width: 1200px) {
-        @mixin layout-item calc(8.3333333333% * $(i));
+        margin-top: 0;
       }
     }
   }
