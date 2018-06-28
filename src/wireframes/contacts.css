@@ -1,16 +1,15 @@
-/* check */[data-block="contacts"] {
-  .layout__col {
-    &:nth-child(1) {
-      flex: 1;
-      max-width: none;
-    }
+[data-block="contacts"] {
+  .layout{
+    @include layout($exception: (1: 1, 2: 270px))
 
-    &:nth-child(2) {
+    &__item {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      /* @mixin layout-item 270px; */
     }
+  }
+
+  .list {
+    @include layout(100%);
   }
 
   .text--type-heading {

@@ -5,36 +5,21 @@
     text-align: left;
   }
 
-  .layout {
-
-    @media (min-width: 768px) {
-      align-items: center;
-    }
-    &__col {
-      &:nth-child(1) {
-
-        @media (min-width: 768px) {
-          max-width: 320px;
-        }
-      }
-
-      &:nth-child(2) {
-
-        @media (min-width: 768px) {
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-        }
-      }
+  .layout:nth-child(1) {
+    .layout {
+      @include layout($exception: (1: 320px, 2: 1));
     }
 
-    &:nth-child(2) {
-      margin-top: var(--v-spacer3);
-      padding-top: var(--v-spacer4);
+    .nav-list {
+      justify-content: flex-end;
     }
   }
 
-  .nav-list {
-    justify-content: flex-end;
+  .layout:nth-child(2) {
+    margin-top: var(--v-spacer5);
+
+    .layout__item:nth-child(2) {
+      text-align: right;
+    }
   }
 }

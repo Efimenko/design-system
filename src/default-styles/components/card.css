@@ -8,4 +8,20 @@
     min-height: 500px;
     padding: var(--box-content-padding-lg) var(--box-content-padding-md);
   }
+
+  &--team {
+    text-align: center;
+    padding: var(--box-content-padding-md) var(--box-content-padding-sm);
+    border: 1px solid #979797;
+
+    .picture-wrapper {
+      max-width: 130px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .picture {
+      padding-top: 100%;
+    }
+  }
 }

@@ -1,13 +1,19 @@
-/* check */[data-block="awards-w2"] {
-  .section__content {
-    display: flex;
+[data-block="awards-w1"] {
+  .list {
+    @include layout(25%);
+  }
+}
+
+[data-block="awards-w2"] {
+  .layout {
+    @include layout($exception: (1: 270px, 2: 1))
+  }
+
+  .list {
+    @include layout(25%);
   }
 
   .section__header {
-    margin-right: calc(var(--gap) * 2);
-    width: 270px;
-    flex-shrink: 0;
-
     & + * {
       margin-top: 0;
     }
